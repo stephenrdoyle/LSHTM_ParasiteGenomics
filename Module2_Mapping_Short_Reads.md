@@ -320,33 +320,40 @@ OR you can use the more conventional file manager if you prefer.
 --------------------------------------------------------------------------------
 ### File format: VCF / BCF
 
-
+![vcf](images/module2_image29.png)
 --------------------------------------------------------------------------------
 
 To look at a region with some interesting sequence variation, go again to the end of the sequence or to base position 1043000 using either the sliders, the GoTo menu or the ‘Navigator’.
 Next read the BCF file that you have just created into Artemis by selecting menus and options as shown below.
 
-
-
+![vcf_load](images/module2_image30.png)
+![vcf_load](images/module2_image31.png)
 
 Below are the details of the three possible colour schemes for the variants in the BCF window panel (change the colour scheme via Right-click and Colour By). Note that this includes both SNPs and INDELs. Scroll along the sequence and see how many different kinds of variants you can find.
 
+![vcf_snpcolours](images/module2_image32.png)
 
+You can read in multiple BCF files from different related bacterial isolates. To do this right-click over the BCF window and select ‘Add VCF’ (remember BCF and VCF are essentially the same thing).
 
+![vcf_addvcf](images/module2_image33.png)
 
+Once you have read the additional BCF file into Artemis right-click in the BCF window and check the ‘Show Labels’ box to make it easier to see which BCF file is which.
+
+![vcf_showlabels](images/module2_image34.png)
 
 What you should notice is that L2b has far fewer SNPs and INDELs than NV compared to the reference. This is because L2b is an LGV strain of Chlamydia and NV is an STI strain. We will come back to these relationships later in the next Module.
 
 
 As you may expect by now, Artemis also allows you to filter your VCF file.
 
-
+![vcf_filter1](images/module2_image35.png)
 
 Have a look through the variant filter window that pops up. You can select or unselect different SNP types or variants to modify your view. Non-variant sites are important because they differentiate sites where the data confirm that the sequence is the same as the reference from regions that appear not to contain SNPs simply because no reads map to them.
 
-
-
+![vcf_filter2](images/module2_image36.png)
 
 Like the BAM views you can also remove or include SNPs etc based on for example mapping score, depth of coverage or sequencing quality in the PROPERTY section listed under the INFO tab.
 
 Useful cutoff values are e.g. DP of at least 10 and Qual of at least 30.
+
+![vcf_filter2](images/module2_image37.png)
