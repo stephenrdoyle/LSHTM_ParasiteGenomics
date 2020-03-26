@@ -1,5 +1,6 @@
 # Module 4 - Genome Assembly
 
+**Instructors**: [Adam Reid](mailto:ar11@sanger.ac.uk) & [Stephen Doyle](mailto:sd21@sanger.ac.uk), Wellcome Sanger Institute
 
 ## Table of contents
 1. [Introduction & Aims](#introduction)
@@ -11,7 +12,8 @@
 7. [Summary](#summary)
 8. [References](#references)
 
-**Instructors**: [Adam Reid](mailto:ar11@sanger.ac.uk) & [Stephen Doyle](mailto:sd21@sanger.ac.uk), Wellcome Sanger Institute
+
+
 
 
 ## 1. Introduction & Aims <a name="introduction"></a>
