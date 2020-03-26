@@ -99,19 +99,26 @@ Kraken works by aligning kmers from your DNA sequence against known kmer frequen
 
 ```shell
 # go to the working directory
+
 cd /home/manager/Module_4_Assembly/step_1  
 
+
 # run FastQC for read 1 and read 2
+
 fastqc SM_V7_chr4_illumina_R1.fq
 
 fastqc SM_V7_chr4_illumina_R2.fq
 
+
 # Once FastQC has finished running, run MultiQC and visualise output in web browser
+
 multiqc .
 
 firefox multiqc_report.html
 
+
 # Once you have finished exploring FastQC/MultiQC, open the kraken report to determine the proportion of the read data that is “unclassified”.
+
 cat kraken.report
 ```
 
@@ -163,13 +170,16 @@ You can explore some examples of kmer spectra and genome size estimates on the G
 
 ```shell
 # go to the working directory
+
 cd /home/manager/Module_4_Assembly/step_2  
 
 
 # run Jellyfish commands. The first step will take a few minutes
+
 jellyfish count -C -m 21 -s 1000000000 -t 4 ../step_1/*.fq -o reads.jf      
 
 jellyfish histo -t 4 reads.jf > reads.histo
+
 
 # Once Jellyfish commands have been run and you have the “reads.histo” file, open the webpage: http://qb.cshl.edu/genomescope/
 
@@ -224,6 +234,7 @@ The process of error correction does take a substantial amount of time and compu
 
 cd /home/manager/Module_4_Assembly/step_3  
 
+
 # run the Miniasm assembly
 
 minimap2 -x ava-pb –t6 SM_V7_chr4_subreads.fa SM_V7_chr4_subreads.fa > SM_V7_chr4.minimap.paf
@@ -239,6 +250,7 @@ cat SM_V7_chr4.miniasm.gfa | awk '$1=="S" { print ">"$2"\n"$3}'  > MINIASM_SM_V7
 
 canu genomeSize=43M -pacbio-raw SM_V7_chr4_subreads.fa –d PB_SM_V7_chr4 -p PB_SM_V7_chr4
 java=/software/jdk1.8.0_74/bin/java
+
 #--- run time: ~ 6h, 30 Gb RAM, 4 threads
 
 
@@ -290,13 +302,16 @@ There are a number of ways to compare genomes. We will be using nucmer to do the
 
 ```shell
 # go to the working directory
+
 cd /home/manager/Module_4_Assembly/step_4  
+
 
 # run nucmer to generate the comparison between the reference and each genome assembly. We have provided one example, but we would like you to run all three assemblies against the reference.
 
 nucmer -maxmatch -l 100 -c 500 SM_V7_chr4.fa ../step_3/PB_SM_V7_chr4.contigs.fasta -prefix chr4_v_PB
 
 gzip chr4_v_PB.delta
+
 
 # open the webpage: http://assemblytics.com/
 # upload the OUT.delta.gz using the instructions provided
@@ -359,9 +374,11 @@ We will use the tool Bandage (https://rrwick.github.io/Bandage/) to visualise th
 
 cd /home/manager/Module_4_Assembly/step_5  
 
+
 # load Pacbio miniasm genome graph into Bandage. This file was made during the miniasm assembly
 
 Bandage load SM_V7_chr4.miniasm.gfa
+
 
 # use Bandage to explore the graph
 ```
