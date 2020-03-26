@@ -74,6 +74,8 @@ To begin the exercise we need to open up a terminal window. We will then need to
 ![terminal](images/module2_image3.png)
 
 ```shell
+# type (or copy and paste) the following into the terminal
+
 cd Module_2_Mapping
 ```
 
@@ -81,6 +83,8 @@ cd Module_2_Mapping
 To map the reads using BWA follow the following series of commands which you will type on the command line when you have opened up your terminal and navigated into the correct directory. Do a quick check to see if you are in the correct directory: when you type the UNIX command ‘ls’ you should see the following folders (in blue) and files (in white) in the resulting list.
 
 ```shell
+# type (or copy and paste) the following into the terminal
+
 ls -lrt
 ```
 
@@ -89,11 +93,15 @@ Stage 1:
 Our reference sequence for this exercise is a Chlamydia trachomatis LGV strain called L2. The sequence file against which you will align your reads is called L2_cat.fasta. This file contains a concatenated sequence in FASTA format consisting of the genome and a plasmid. To have a quick look at the first 10 lines of this file, type:
 
 ```shell
+# type (or copy and paste) the following into the terminal
+
 head L2_cat.fasta
 ```
 
 Most alignment programs need to index the reference sequence against which you will align your reads before you begin. To do this for BWA type:    
 ```shell
+# type (or copy and paste) the following into the terminal
+
 bwa index L2_cat.fasta
 ```
 The command and expected output are shown below. Be patient and wait for the command prompt (~/Module_2_Mapping$) to return before proceeding to Stage 2.
@@ -105,6 +113,8 @@ We will now align both the forward and the reverse reads against our now indexed
 
 Perform the alignment with the following command and wait for it to finish running (it may take a few minutes):
 ```shell
+# type (or copy and paste) the following into the terminal
+
 bwa mem L2_cat.fasta NV_1.fastq.gz NV_2.fastq.gz > mapping.sam
 ```
 ![bwamem](images/module2_image5.png)
@@ -123,6 +133,8 @@ nucleotide sequence alignments that is illustrated on the next page. Creating ou
 SAMtools is a collection of utilities for manipulating alignments in SAM format.
 See http://samtools.sourceforge.net/ for more information. There are numerous options that control the way the SAMtools utilities run, a few of which are explained below. To get brief explanations of the various utilities and the different options or flags that control each utility, type samtools or samtools followed by one particular utility on the command line like e.g.:
 ```shell
+# type (or copy and paste) the following into the terminal
+
 samtools
 
 samtools view
@@ -131,6 +143,8 @@ samtools view
 
 To have a quick look at the first lines of the SAM file you just generated, type:
 ```shell
+# type (or copy and paste) the following into the terminal
+
 head mapping.sam
 ```
 
@@ -146,6 +160,8 @@ Many visualization tools can read BAM files. But first a BAM file has to be sort
 Stage 3:
 To convert our SAM format alignment into BAM format run the following command:
 ```shell
+# type (or copy and paste) the following into the terminal
+
 samtools view -q 15 -b -o mapping.bam mapping.sam
 
 # -q 15 = discard sequence reads that are below a quality score of 15. Poor quality reads will therefore be discarded.
@@ -156,6 +172,8 @@ samtools view -q 15 -b -o mapping.bam mapping.sam
 Stage 4:
 Next we need to sort the mapped read sequences in the BAM file by typing this command:
 ```shell
+# type (or copy and paste) the following into the terminal
+
 samtools sort –o NV.bam mapping.bam
 ```
 This will take a little time to run. By default the sorting is done by chromosomal/reference sequence and position.
@@ -164,6 +182,8 @@ This will take a little time to run. By default the sorting is done by chromosom
 Stage 5:
 Finally we need to index the BAM file to make it ready for viewing in Artemis:
 ```shell
+# type (or copy and paste) the following into the terminal
+
 samtools index NV.bam
 ```
 
@@ -177,6 +197,8 @@ We are now ready to open up Artemis and view our newly mapped sequence data.
 Double click on the Artemis Icon or type ‘art &’ on the command line of your terminal window and press return. We will read the reference sequence into Artemis that we have been using as a reference up until now.
 
 ```shell
+# type (or copy and paste) the following into the terminal
+
 art &
 ```
 
@@ -317,6 +339,8 @@ So far we have looked at SNP variation rather superficially. In reality you woul
 
 We will now take our NV.bam file and generate a BCF file from it which we will view in Artemis. To do so go back to the terminal window and type on the command line be patient and wait for it to finish and return to the command prompt before continuing:
 ```shell
+# type (or copy and paste) the following into the terminal
+
 bcftools mpileup -Ou -f L2_cat.fasta NV.bam | bcftools call -v -c --ploidy 1 -Ob --skip-variants indels > NV.bcf
 
 bcftools index NV.bcf
@@ -324,18 +348,26 @@ bcftools mpileup -Ou -f L2_cat.fasta NV.bam | bcftools call -v -c --ploidy 1 -Ob
 ```
 There are two more steps required before we can view out SNPs in Artemis. First, do the actual SNP calling:
 ```shell
+# type (or copy and paste) the following into the terminal
+
 bcftools view -H NV.bcf -Oz > NV.vcf.gz
 ```
 Second, we have to index the file before viewing in in Artemis:
 ```shell
+# type (or copy and paste) the following into the terminal
+
 tabix NV.vcf.gz
 ```
 Now let’s do a bit of house keeping because many of the files we have created are large and are no longer needed, before we view our SNP calls in the Artemis session that’s still open. So please delete the following files:
 ```shell
+# type (or copy and paste) the following into the terminal
+
 NV_temp.bcf mapping.sam mapping.bam L2_cat.fasta.amb L2_cat.fasta.ann L2_cat.fasta.bwt L2_cat.fasta.pac L2_cat.fasta.sa L2_cat.fasta.fai
 ```
 You can do this either in your terminal window with UNIX command rm (see below):
 ```shell
+# type (or copy and paste) the following into the terminal
+
 rm files
 ```
 OR you can use the more conventional file manager if you prefer.
