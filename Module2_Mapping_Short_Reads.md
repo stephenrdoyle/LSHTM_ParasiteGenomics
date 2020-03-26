@@ -22,7 +22,7 @@ C. trachomatis is one of the most prevalent human pathogens in the world, causin
 In this part of the course we will align the Illumina reads from a generated from the New Variant Swedish C. trachomatis strain (known as NV) against a reference sequence (L2). The NV strain caused a European health alert in 2006. During this time it became the dominant strain circulating in some European countries and began to spread world wide. The reason for this was that it evaded detection by the widely used PCR-based diagnostic test. During the course of this exercise you will identify the reason why this isolate confounded the standard assay.
 
 --------------------------------------------------------------------------------
-## Workflow of re-sequencing, alignment, and in silico analysis
+### Workflow of re-sequencing, alignment, and in silico analysis
 ![Resequencing workflow](images/module2_image1.png)
 --------------------------------------------------------------------------------
 
@@ -48,12 +48,15 @@ The first thing we are going to do in this module is to map raw sequence read da
 
 The FASTQ sequence format is shown below.
 
-
-
-
+--------------------------------------------------------------------------------
+### FASTQ sequence file format
+![FASTQ format](images/module2_image2.png)
+--------------------------------------------------------------------------------
 
 
 To begin the exercise we need to open up a terminal window. We will then need to move into the ‘Module_2_Mapping’ directory using the UNIX command ‘cd’ .
+
+![terminal](images/module2_image3.png)
 
 ```shell
 cd Module_2_Mapping
@@ -80,6 +83,7 @@ bwa index L2_cat.fasta
 ```
 The command and expected output are shown below. Be patient and wait for the command prompt (~/Module_2_Mapping$) to return before proceeding to Stage 2.
 
+![terminal](images/module2_image4.png)
 
 Stage 2:
 We will now align both the forward and the reverse reads against our now indexed reference sequence. The forward and reserve reads are contained in files NV_1.fastq.gz and NV_2.fastq.gz, and the output will be saved in SAM format.  
@@ -88,6 +92,8 @@ Perform the alignment with the following command and wait for it to finish runni
 ```shell
 bwa mem L2_cat.fasta NV_1.fastq.gz NV_2.fastq.gz > mapping.sam
 ```
+![bwamem](images/module2_image5.png)
+
 
 --------------------------------------------------------------------------------
 Please note:
@@ -112,8 +118,10 @@ To have a quick look at the first lines of the SAM file you just generated, type
 ```shell
 head mapping.sam
 ```
-The SAM/BAM file format is illustrated below.
 
+The SAM/BAM file format is very powerful. It is unlikely that you will need to work with the contents of a SAM/BAM file directly, but it is very informative to visualize it in a viewer and it is a great format to do further analysis with. The format specifications are at http://samtools.sourceforge.net/SAM1.pdf. Below is a brief overview of the information contained in these files.
+
+![sam_bam](images/module2_image6.png)
 
 
 Next we want to change the file format from SAM to BAM. While files in SAM format store their information as plain text, the BAM format is a binary representation of that same information. One reason to keep the alignment files in BAM rather than in SAM format is that the binary files are a lot smaller than the plain text files, i.e. the BAM format saves expensive storage space (sequence data are generated at an ever increasing rate!) and reduces the time the computer has to wait for slow disk access to read or write data.
