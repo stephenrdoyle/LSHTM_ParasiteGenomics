@@ -18,7 +18,7 @@ The re-sequencing of a genome typcially aims to capture information on Single Nu
 
 The computer programme Artemis allows the user to view genomic sequences and EMBL/GenBank (NCBI) annotation entries in a highly interactive graphical format. Artemis also allows the user to view mapped sequencing reads from e.g. Illumina, or PacBio sequencers. See http://www.sanger.ac.uk/resources/software/artemis/ngs/.
  
-## Aims
+## Aims of this module
 
 - To introduce mapping software, BWA, SAMtools, SAM/BAM and FASTQ file format.
 - To show how Next Generation Sequencing data can be viewed in Artemis alongside your chosen reference using Chlamydia as an example: navigation, read filtering, read coverage, views.
@@ -28,13 +28,13 @@ The computer programme Artemis allows the user to view genomic sequences and EMB
 
 ## 2. Background <a name="background"></a>
 
-### Chlamydia trachomatis
+### *Chlamydia trachomatis*
 
 To learn about sequence read mapping and the use of Artemis in conjunction with NGS data we will work with real data from the bacterial pathogen Chlamydia.
 
-C. trachomatis is one of the most prevalent human pathogens in the world, causing a variety of infections. It is the leading cause of sexually transmitted infections (STIs), with an estimated 131 million new cases each year. Additionally, it is also the leading cause of preventable infectious blindness with tens of millions of people thought to have active disease. The STI strains of Chlamydia can be further subdivided into those that are restricted to the genital tract and the more invasive type know as the lymphogranuloma venereum or LGV biovar. Despite the large differences in the site of infection and the disease severity and outcome there are few whole-gene differences that distinguish any of the different types of C. trachomatis. As you will see most of the variation lies at the level of SNPs.
+*C. trachomatis* is one of the most prevalent human pathogens in the world, causing a variety of infections. It is the leading cause of sexually transmitted infections (STIs), with an estimated 131 million new cases each year. Additionally, it is also the leading cause of preventable infectious blindness with tens of millions of people thought to have active disease. The STI strains of Chlamydia can be further subdivided into those that are restricted to the genital tract and the more invasive type know as the lymphogranuloma venereum or LGV biovar. Despite the large differences in the site of infection and the disease severity and outcome there are few whole-gene differences that distinguish any of the different types of C. trachomatis. As you will see most of the variation lies at the level of SNPs.
 
-In this part of the course we will align the Illumina reads from a generated from the New Variant Swedish C. trachomatis strain (known as NV) against a reference sequence (L2). The NV strain caused a European health alert in 2006. During this time it became the dominant strain circulating in some European countries and began to spread world wide. The reason for this was that it evaded detection by the widely used PCR-based diagnostic test. During the course of this exercise you will identify the reason why this isolate confounded the standard assay.
+In this part of the course we will align the Illumina reads from a generated from the New Variant Swedish *C. trachomatis* strain (known as NV) against a reference sequence (L2). The NV strain caused a European health alert in 2006. During this time it became the dominant strain circulating in some European countries and began to spread world wide. The reason for this was that it evaded detection by the widely used PCR-based diagnostic test. During the course of this exercise you will identify the reason why this isolate confounded the standard assay.
 
 --------------------------------------------------------------------------------
 ### Workflow of re-sequencing, alignment, and in silico analysis
