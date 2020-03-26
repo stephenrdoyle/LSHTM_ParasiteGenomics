@@ -2,7 +2,7 @@
 
 
 ## Table of contents
-1. [Introduction](#introduction)
+1. [Introduction & Aims](#introduction)
 2. [Background](#background)
 3. [Short Read Alignment](#short_read_alignment)
 4. [Artemis - Viewing Mapped Reads](#artemis_reads)
@@ -12,13 +12,13 @@
 
 **Instructors**: [Adam Reid](ar11@sanger.ac.uk) & [Stephen Doyle](sd21@sanger.ac.uk), Wellcome Sanger Institute
 
-## 1. Introduction <a name="introduction"></a>
+## 1. Introduction & Aims <a name="introduction"></a>
 
 The re-sequencing of a genome typcially aims to capture information on Single Nucleotide Polymorphisms (SNPs), INsertions and DELetions (INDELs) and Copy Number Variants (CNVs) between representatives of the same species. A reference genome must already exist (at least for a very closely related species). Whether one is dealing with different bacterial isolates, with different strains of single-celled parasites, or indeed with genomes of different human individuals, the principles are essentially the same. Instead of assembling the newly generated sequence reads de novo to produce a new genome sequence, it is easier and much faster to align or map the new sequence data to the reference genome (please note that we will use the terms “aligning” and “mapping” interchangeably). One can then readily identify SNPs, INDELs, and CNVs that distinguish closely related populations or individual organisms and may thus learn about genetic differences that may cause drug resistance or increased virulence in pathogens, or changed susceptibility to disease in humans. One important prerequisite for the mapping of sequence data to work is that the reference and the re-sequenced subject have the same genome architecture. Once you are familiar with viewing short read mapping data you may also find it helpful for quality checking your sequencing data and your de novo assemblies.
 
 The computer programme Artemis allows the user to view genomic sequences and EMBL/GenBank (NCBI) annotation entries in a highly interactive graphical format. Artemis also allows the user to view mapped sequencing reads from e.g. Illumina, or PacBio sequencers. See http://www.sanger.ac.uk/resources/software/artemis/ngs/.
  
-## Aims of this module
+The aims of this module are to:
 
 - To introduce mapping software, BWA, SAMtools, SAM/BAM and FASTQ file format.
 - To show how Next Generation Sequencing data can be viewed in Artemis alongside your chosen reference using Chlamydia as an example: navigation, read filtering, read coverage, views.
@@ -26,6 +26,7 @@ The computer programme Artemis allows the user to view genomic sequences and EMB
 
 [↥ **Back to top**](#top)
 
+******
 ## 2. Background <a name="background"></a>
 
 ### *Chlamydia trachomatis*
@@ -36,13 +37,14 @@ To learn about sequence read mapping and the use of Artemis in conjunction with 
 
 In this part of the course we will align the Illumina reads from a generated from the New Variant Swedish *C. trachomatis* strain (known as NV) against a reference sequence (L2). The NV strain caused a European health alert in 2006. During this time it became the dominant strain circulating in some European countries and began to spread world wide. The reason for this was that it evaded detection by the widely used PCR-based diagnostic test. During the course of this exercise you will identify the reason why this isolate confounded the standard assay.
 
---------------------------------------------------------------------------------
+
 ### Workflow of re-sequencing, alignment, and in silico analysis
 ![Resequencing workflow](images/module2_image1.png)
---------------------------------------------------------------------------------
+
 
 [↥ **Back to top**](#top)
 
+******
 ## 3. Short Read Alignment <a name="short_read_alignment"></a>
 There are multiple short-read alignment programs, each with its own strengths, weaknesses, and caveats. Wikipedia has a good list and description of each. Search for “short-read sequence alignment” if you are interested. We are going to use BWA:
 
@@ -65,10 +67,10 @@ The first thing we are going to do in this module is to map raw sequence read da
 
 The FASTQ sequence format is shown below.
 
---------------------------------------------------------------------------------
+
 ### FASTQ sequence file format
 ![FASTQ format](images/module2_image2.png)
---------------------------------------------------------------------------------
+
 
 
 To begin the exercise we need to open up a terminal window. We will then need to move into the ‘Module_2_Mapping’ directory using the UNIX command ‘cd’ .
@@ -122,7 +124,7 @@ bwa mem L2_cat.fasta NV_1.fastq.gz NV_2.fastq.gz > mapping.sam
 ![bwamem](images/module2_image5.png)
 
 
---------------------------------------------------------------------------------
+
 ### Please note:
 - The fastq input files provided have been gzipped to compress the large fastq files, many types of software like BWA will accept gzipped files as input.
 
@@ -141,7 +143,7 @@ samtools
 
 samtools view
 ```
---------------------------------------------------------------------------------
+
 
 To have a quick look at the first lines of the SAM file you just generated, type:
 ```shell
@@ -196,6 +198,8 @@ We are now ready to open up Artemis and view our newly mapped sequence data.
 
 [↥ **Back to top**](#top)
 
+
+******
 ## 4. Artemis - Viewing Mapped Reads <a name="artemis_reads"></a>
 
 Time to load artemis. Double click on the Artemis Icon or type ‘art &’ on the command line of your terminal window and press return. We will read the reference sequence into Artemis that we have been using as a reference up until now.
@@ -269,6 +273,8 @@ So this is not the actual library fragment size, although you would expect it to
 
 [↥ **Back to top**](#top)
 
+
+******
 ## 5. Artemis - Viewing SNPs <a name="artemis_snps"></a>
 Start by returning your view back to ‘Stack’ view
 
@@ -290,6 +296,8 @@ Many SNP examples are quite clear, however this is not always the case. What if 
 
 [↥ **Back to top**](#top)
 
+
+******
 ## 6. Chlamydia example <a name="chlamydia_example"></a>
 
 We want to give you a biological example of how resequencing data can be really informative and valuable. Now do the following: using either the sliders, the GoTo menu or the ‘Navigator’, go to the end of the sequence or to base position 1043000. Adjust your view so you are in “Stack view” and have the depth of coverage graph showing. You might also need to adjust the Artemis window as well as the different panels.
@@ -340,6 +348,8 @@ Now go back to the plasmid region at the end of the genome sequence and have a l
 
 [↥ **Back to top**](#top)
 
+
+******
 ## 7. Looking at SNPs in more detail <a name="snps"></a>
 So far we have looked at SNP variation rather superficially. In reality you would need more information to understand the effect that the sequence change might have on, for example, coding capacity. For this we can view a different data type called Variant Call Format (VCF). In analogy to the SAM/BAM file formats, VCF files are essentially plain text files while BCF files represent the binary, usually compressed versions of VCF files. VCF format was developed to represent variation data from the 1000 human genome project and is well accepted as a standard format for this type of data.
 
@@ -384,11 +394,11 @@ rm files
 ```
 OR you can use the more conventional file manager if you prefer.
 
---------------------------------------------------------------------------------
+
 ### File format: VCF / BCF
 
 ![vcf](images/module2_image29.png)
---------------------------------------------------------------------------------
+
 
 To look at a region with some interesting sequence variation, go again to the end of the sequence or to base position 1043000 using either the sliders, the GoTo menu or the ‘Navigator’.
 Next read the BCF file that you have just created into Artemis by selecting menus and options as shown below.
