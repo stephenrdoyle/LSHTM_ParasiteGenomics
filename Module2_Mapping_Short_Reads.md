@@ -89,7 +89,7 @@ ls -lrt
 ```
 
 
-Stage 1:
+### Step 1:
 Our reference sequence for this exercise is a Chlamydia trachomatis LGV strain called L2. The sequence file against which you will align your reads is called L2_cat.fasta. This file contains a concatenated sequence in FASTA format consisting of the genome and a plasmid. To have a quick look at the first 10 lines of this file, type:
 
 ```shell
@@ -108,7 +108,7 @@ The command and expected output are shown below. Be patient and wait for the com
 
 ![terminal](images/module2_image4.png)
 
-Stage 2:
+### Step 2
 We will now align both the forward and the reverse reads against our now indexed reference sequence. The forward and reserve reads are contained in files NV_1.fastq.gz and NV_2.fastq.gz, and the output will be saved in SAM format.  
 
 Perform the alignment with the following command and wait for it to finish running (it may take a few minutes):
@@ -121,16 +121,16 @@ bwa mem L2_cat.fasta NV_1.fastq.gz NV_2.fastq.gz > mapping.sam
 
 
 --------------------------------------------------------------------------------
-Please note:
-The fastq input files provided have been gzipped to compress the large fastq files, many types of software like BWA will accept gzipped files as input.
+### Please note:
+- The fastq input files provided have been gzipped to compress the large fastq files, many types of software like BWA will accept gzipped files as input.
 
-The last part of the command line > mapping.sam determines the name of the
+- The last part of the command line > mapping.sam determines the name of the
 output file that will be created in SAM format.
 
-SAM (Sequence Alignment/Map) format is a generic format for storing large
+- SAM (Sequence Alignment/Map) format is a generic format for storing large
 nucleotide sequence alignments that is illustrated on the next page. Creating our output in SAM format allows us to use a complementary software package called SAMtools.
 
-SAMtools is a collection of utilities for manipulating alignments in SAM format.
+- SAMtools is a collection of utilities for manipulating alignments in SAM format.
 See http://samtools.sourceforge.net/ for more information. There are numerous options that control the way the SAMtools utilities run, a few of which are explained below. To get brief explanations of the various utilities and the different options or flags that control each utility, type samtools or samtools followed by one particular utility on the command line like e.g.:
 ```shell
 # type (or copy and paste) the following into the terminal
@@ -157,7 +157,8 @@ Next we want to change the file format from SAM to BAM. While files in SAM forma
 
 Many visualization tools can read BAM files. But first a BAM file has to be sorted (by chromosome/reference sequence and position) and indexed, which enables fast working with the alignments.
 
-Stage 3:
+
+### Step 3:
 To convert our SAM format alignment into BAM format run the following command:
 ```shell
 # type (or copy and paste) the following into the terminal
@@ -169,7 +170,8 @@ samtools view -q 15 -b -o mapping.bam mapping.sam
 # -o mapping.bam = output file name
 
 ```
-Stage 4:
+
+### Step 4:
 Next we need to sort the mapped read sequences in the BAM file by typing this command:
 ```shell
 # type (or copy and paste) the following into the terminal
@@ -179,7 +181,7 @@ samtools sort –o NV.bam mapping.bam
 This will take a little time to run. By default the sorting is done by chromosomal/reference sequence and position.
 
 
-Stage 5:
+### Step 5:
 Finally we need to index the BAM file to make it ready for viewing in Artemis:
 ```shell
 # type (or copy and paste) the following into the terminal
@@ -187,26 +189,28 @@ Finally we need to index the BAM file to make it ready for viewing in Artemis:
 samtools index NV.bam
 ```
 
-Stage 6:
+### Step 6:
 We are now ready to open up Artemis and view our newly mapped sequence data.
 
 [↥ **Back to top**](#top)
 
 ## 4. Artemis - Viewing Mapped Reads <a name="artemis_reads"></a>
-### Load Artemis and your data
-Double click on the Artemis Icon or type ‘art &’ on the command line of your terminal window and press return. We will read the reference sequence into Artemis that we have been using as a reference up until now.
+
+Time to load artemis. Double click on the Artemis Icon or type ‘art &’ on the command line of your terminal window and press return. We will read the reference sequence into Artemis that we have been using as a reference up until now.
 
 ```shell
 # type (or copy and paste) the following into the terminal
 
 art &
+
+# "&" allows a program or task to run in the background, allowing you to still use the command line if needed.
 ```
 
 Once you see the initial Artemis window, open the file L2_cat.fasta via File – Open. Just to remind you, this file contains a concatenated sequence consisting of the C. trachomatis LGV strain ‘L2’ chromosome sequence along with its plasmid.
 
 ![artemis_load](images/module2_image7.png)
 
-2. Now load up the annotation file for the C. trachomatis LGV strain L2 chromosome.
+Now load up the annotation file for the C. trachomatis LGV strain L2 chromosome.
 
 ![artemis_loadfasta](images/module2_image8.png)
 
@@ -337,6 +341,8 @@ Now go back to the plasmid region at the end of the genome sequence and have a l
 ## 7. Looking at SNPs in more detail <a name="snps"></a>
 So far we have looked at SNP variation rather superficially. In reality you would need more information to understand the effect that the sequence change might have on, for example, coding capacity. For this we can view a different data type called Variant Call Format (VCF). In analogy to the SAM/BAM file formats, VCF files are essentially plain text files while BCF files represent the binary, usually compressed versions of VCF files. VCF format was developed to represent variation data from the 1000 human genome project and is well accepted as a standard format for this type of data.
 
+
+### Step 1:
 We will now take our NV.bam file and generate a BCF file from it which we will view in Artemis. To do so go back to the terminal window and type on the command line be patient and wait for it to finish and return to the command prompt before continuing:
 ```shell
 # type (or copy and paste) the following into the terminal
@@ -346,6 +352,8 @@ bcftools mpileup -Ou -f L2_cat.fasta NV.bam | bcftools call -v -c --ploidy 1 -Ob
 bcftools index NV.bcf
 
 ```
+
+### Step 2:
 There are two more steps required before we can view out SNPs in Artemis. First, do the actual SNP calling:
 ```shell
 # type (or copy and paste) the following into the terminal
@@ -358,6 +366,8 @@ Second, we have to index the file before viewing in in Artemis:
 
 tabix NV.vcf.gz
 ```
+
+### Step 3:
 Now let’s do a bit of house keeping because many of the files we have created are large and are no longer needed, before we view our SNP calls in the Artemis session that’s still open. So please delete the following files:
 ```shell
 # type (or copy and paste) the following into the terminal
