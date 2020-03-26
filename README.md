@@ -6,18 +6,18 @@ Teaching materials for the London School of Hygiene and Tropical Medicine Parasi
 
 ### Course manual
 1. Module 1 -
-     - [Introduction presentation]()
+     - [Introductory presentation]()
      - [Online manual]()
-     - [PDF]()
+     - [Manual PDF version]()
 2. Module 2 - Short Read mapping
-     - [Introduction presentation]()
+     - [Introductory presentation]()
      - [Online manual](Module_2_Mapping_Short_Reads.md)
-     - [PDF]()
+     - [Manual PDF version]()
 3. Module 3 - Comparative Genomics
-     - [Introduction presentation](presentations/Presentation_PathogenGenomicsLSHTM_Module3_ComparativeGenomics.pptx)
+     - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_Module3_ComparativeGenomics.pptx)
      - [Online manual]()
-     - [PDF]()
+     - [Manual PDF version]()
 4. Module 4 - Genome Assembly
-     - [Introduction presentation](presentations/Presentation_PathogenGenomicsLSHTM_Module4_DeNovoAssembly.pptx)
+     - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_Module4_DeNovoAssembly.pptx)
      - [Online manual](Module_4_Genome_Assembly.md)
-     - [PDF]()
+     - [Manual PDF version]()
