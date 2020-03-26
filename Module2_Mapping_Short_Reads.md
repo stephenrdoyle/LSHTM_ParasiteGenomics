@@ -1,4 +1,16 @@
-# Introduction
+# Module 2 - Mapping Short Reads
+
+## Table of contents
+1. [Introduction](#introduction)
+2. [Background](#background)
+3. [Short Read Alignment](#short_read_alignment)
+4. [Artemis - Viewing Mapped Reads](#artemis_reads)
+5. [Artemis - Viewing SNPs](#artemis_snps2)
+6. [Chlamydia example](#chlamydia_example)
+7. [Looking at SNPs in more detail](#snps)
+
+
+## 1. Introduction <a name="introduction"></a>
 
 The re-sequencing of a genome typcially aims to capture information on Single Nucleotide Polymorphisms (SNPs), INsertions and DELetions (INDELs) and Copy Number Variants (CNVs) between representatives of the same species. A reference genome must already exist (at least for a very closely related species). Whether one is dealing with different bacterial isolates, with different strains of single-celled parasites, or indeed with genomes of different human individuals, the principles are essentially the same. Instead of assembling the newly generated sequence reads de novo to produce a new genome sequence, it is easier and much faster to align or map the new sequence data to the reference genome (please note that we will use the terms “aligning” and “mapping” interchangeably). One can then readily identify SNPs, INDELs, and CNVs that distinguish closely related populations or individual organisms and may thus learn about genetic differences that may cause drug resistance or increased virulence in pathogens, or changed susceptibility to disease in humans. One important prerequisite for the mapping of sequence data to work is that the reference and the re-sequenced subject have the same genome architecture. Once you are familiar with viewing short read mapping data you may also find it helpful for quality checking your sequencing data and your de novo assemblies.
 
@@ -6,17 +18,18 @@ The computer programme Artemis allows the user to view genomic sequences and EMB
  
 ## Aims
 
-To introduce mapping software, BWA, SAMtools, SAM/BAM and FASTQ file format. To show how Next Generation Sequencing data can be viewed in Artemis alongside your chosen reference using Chlamydia as an example: navigation, read filtering, read coverage, views. To show how sequence variation data such as SNPs, INDELs, CNVs can be viewed in single and multiple BAM files, and BCF variant filtering. To show how short-read mapping can be executed with a script, and working with NGS data in eukaryotes: Plasmodium
+- To introduce mapping software, BWA, SAMtools, SAM/BAM and FASTQ file format.
+- To show how Next Generation Sequencing data can be viewed in Artemis alongside your chosen reference using Chlamydia as an example: navigation, read filtering, read coverage, views.
+- To show how sequence variation data such as SNPs, INDELs, CNVs can be viewed in single and multiple BAM files, and BCF variant filtering.
 
 
 
-## 1. Background
+## 2. Background <a name="background"></a>
 
-### Biology
+### Chlamydia trachomatis
 
-To learn about sequence read mapping and the use of Artemis in conjunction with NGS data we will work with real data from the bacterial pathogen Chlamydia
+To learn about sequence read mapping and the use of Artemis in conjunction with NGS data we will work with real data from the bacterial pathogen Chlamydia.
 
-### "Chlamydia trachomatis
 C. trachomatis is one of the most prevalent human pathogens in the world, causing a variety of infections. It is the leading cause of sexually transmitted infections (STIs), with an estimated 131 million new cases each year. Additionally, it is also the leading cause of preventable infectious blindness with tens of millions of people thought to have active disease. The STI strains of Chlamydia can be further subdivided into those that are restricted to the genital tract and the more invasive type know as the lymphogranuloma venereum or LGV biovar. Despite the large differences in the site of infection and the disease severity and outcome there are few whole-gene differences that distinguish any of the different types of C. trachomatis. As you will see most of the variation lies at the level of SNPs.
 
 In this part of the course we will align the Illumina reads from a generated from the New Variant Swedish C. trachomatis strain (known as NV) against a reference sequence (L2). The NV strain caused a European health alert in 2006. During this time it became the dominant strain circulating in some European countries and began to spread world wide. The reason for this was that it evaded detection by the widely used PCR-based diagnostic test. During the course of this exercise you will identify the reason why this isolate confounded the standard assay.
@@ -26,7 +39,7 @@ In this part of the course we will align the Illumina reads from a generated fro
 ![Resequencing workflow](images/module2_image1.png)
 --------------------------------------------------------------------------------
 
-## 2. Short Read Alignment
+## 3. Short Read Alignment <a name="short_read_alignment"></a>
 There are multiple short-read alignment programs, each with its own strengths, weaknesses, and caveats. Wikipedia has a good list and description of each. Search for “short-read sequence alignment” if you are interested. We are going to use BWA:
 
                                 BWA:  Burrows-Wheeler Aligner
@@ -155,7 +168,7 @@ samtools index NV.bam
 Stage 6:
 We are now ready to open up Artemis and view our newly mapped sequence data.
 
-## Artemis
+## 4. Artemis - Viewing Mapped Reads <a name="artemis_reads"></a>
 ### Load Artemis and your data
 Double click on the Artemis Icon or type ‘art &’ on the command line of your terminal window and press return. We will read the reference sequence into Artemis that we have been using as a reference up until now.
 
@@ -222,7 +235,8 @@ So this is not the actual library fragment size, although you would expect it to
 
 ![artemis_inferred_size](images/module2_image17.png)
 
-### Viewing SNPs
+
+## 5. Artemis - Viewing SNPs <a name="artemis_snps"></a>
 Start by returning your view back to ‘Stack’ view
 
 ![artemis_snps](images/module2_image18.png)
@@ -241,7 +255,7 @@ If you zoom in further, the sequence of the individual sequence reads and the ac
 
 Many SNP examples are quite clear, however this is not always the case. What if the read depth is very low? If there are only two reads mapping, the reference is T and both reads are C is this enough evidence to say that the genomes are different? What if there are many reads mapping and out of e.g. 100 base calls at a particular position 50 are called as G and 50 are called as T. This could be due to a mixed infection/population that was sequenced, or this would be typical for a heterozygous locus in a diploid genome…
 
-
+## 6. Chlamydia example <a name="chlamydia_example"></a>
 
 We want to give you a biological example of how resequencing data can be really informative and valuable. Now do the following: using either the sliders, the GoTo menu or the ‘Navigator’, go to the end of the sequence or to base position 1043000. Adjust your view so you are in “Stack view” and have the depth of coverage graph showing. You might also need to adjust the Artemis window as well as the different panels.
 
@@ -289,7 +303,7 @@ Now go back to the plasmid region at the end of the genome sequence and have a l
 
 ![artemis_selectbams](images/module2_image28.png)
 
-## Looking at SNPs in more detail
+## 7. Looking at SNPs in more detail <a name="snps"></a>
 So far we have looked at SNP variation rather superficially. In reality you would need more information to understand the effect that the sequence change might have on, for example, coding capacity. For this we can view a different data type called Variant Call Format (VCF). In analogy to the SAM/BAM file formats, VCF files are essentially plain text files while BCF files represent the binary, usually compressed versions of VCF files. VCF format was developed to represent variation data from the 1000 human genome project and is well accepted as a standard format for this type of data.
 
 We will now take our NV.bam file and generate a BCF file from it which we will view in Artemis. To do so go back to the terminal window and type on the command line be patient and wait for it to finish and return to the command prompt before continuing:
