@@ -1,5 +1,6 @@
 # Module 2 - Mapping Short Reads
 
+
 ## Table of contents
 1. [Introduction](#introduction)
 2. [Background](#background)
@@ -9,6 +10,7 @@
 6. [Chlamydia example](#chlamydia_example)
 7. [Looking at SNPs in more detail](#snps)
 
+**Instructors**: [Adam Reid](ar11@sanger.ac.uk) & [Stephen Doyle](sd21@sanger.ac.uk), Wellcome Sanger Institute
 
 ## 1. Introduction <a name="introduction"></a>
 
