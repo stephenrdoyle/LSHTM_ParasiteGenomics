@@ -10,7 +10,7 @@
 6. [Chlamydia example](#chlamydia_example)
 7. [Looking at SNPs in more detail](#snps)
 
-**Instructors**: [Adam Reid](ar11@sanger.ac.uk) & [Stephen Doyle](sd21@sanger.ac.uk), Wellcome Sanger Institute
+**Instructors**: [Adam Reid](mailto:ar11@sanger.ac.uk) & [Stephen Doyle](mailto:sd21@sanger.ac.uk), Wellcome Sanger Institute
 
 ## 1. Introduction & Aims <a name="introduction"></a>
 
@@ -436,3 +436,7 @@ Useful cutoff values are e.g. DP of at least 10 and Qual of at least 30.
 ![vcf_filter2](images/module2_image37.png)
 
 [↥ **Back to top**](#top)
+
+
+******
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
