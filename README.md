@@ -5,7 +5,7 @@ Teaching materials for the London School of Hygiene and Tropical Medicine Parasi
 **Instructors**: [Adam Reid](mailto:ar11@sanger.ac.uk) & [Stephen Doyle](mailto:sd21@sanger.ac.uk), Wellcome Sanger Institute
 
 ### Course manual
-1. Module 1 -
+1. Module 1 - Artemis
      - [Introductory presentation]()
      - [Online manual]()
      - [Manual PDF version]()
@@ -19,8 +19,18 @@ Teaching materials for the London School of Hygiene and Tropical Medicine Parasi
      - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_Module3_ComparativeGenomics.pptx)
      - [Online manual]()
      - [Manual PDF version]()
-     
+
 4. Module 4 - Genome Assembly
      - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_Module4_DeNovoAssembly.pptx)
      - [Online manual](Module_4_Genome_Assembly.md)
+     - [Manual PDF version]()
+
+6. Module 5 - RNAseq(1)
+     - [Introductory presentation]()
+     - [Online manual]()
+     - [Manual PDF version]()
+
+6. Module 6 - RNAseq(2)
+     - [Introductory presentation]()
+     - [Online manual]()
      - [Manual PDF version]()
