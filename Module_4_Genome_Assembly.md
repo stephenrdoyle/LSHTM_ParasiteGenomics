@@ -19,7 +19,7 @@ The aim of this practical class is to introduce you to some of the concepts invo
 
 The data you will be working with in this tutorial comes from a species of parasitic blood fluke named *Schistosoma mansoni*. This parasite causes a disease called schistosomiasis that affects approximately 200 million people who reside in Africa, the Middle East, the Caribbean, Brazil, Venezuela and Suriname. The lifecycle of the parasite is shown in Figure 1, which illustrates two main life history stages: (1) the maturation into adulthood and sexual reproduction in the mammalian host (here a human), and (2) clonal reproduction and transmissible stage in an intermediate host (typically a snail), and in the lakes and streams in which the snail resides. The DNA for sequencing was derived from a maintained laboratory line of *S. mansoni* at the Wellcome Sanger Institute, in which the mammalian host is a mouse in the maintenance of the life cycle.
 
-![parasite_lifecycle](images/module4_image1.png | width=100)
+![parasite_lifecycle](images/module4_image1.png)
 
 **Figure 1** *Schistosoma mansoni* lifecycle
 
