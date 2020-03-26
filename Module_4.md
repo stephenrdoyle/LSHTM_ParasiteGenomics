@@ -1,4 +1,4 @@
-# Module 4
+# Module 4 - Genome Assembly
 
 
 ## Table of contents
