@@ -165,16 +165,18 @@ art &
 
 Once you see the initial Artemis window, open the file L2_cat.fasta via File – Open. Just to remind you, this file contains a concatenated sequence consisting of the C. trachomatis LGV strain ‘L2’ chromosome sequence along with its plasmid.
 
+![artemis_load](images/module2_image7.png)
+
 2. Now load up the annotation file for the C. trachomatis LGV strain L2 chromosome.
 
-
+![artemis_loadfasta](images/module2_image8.png)
 
 
 
 To examine the read mapping we have just performed we are going to read our BAM file containing the mapped reads into Artemis as described below.
 Please make sure you do not go to a zoomed-out view of Artemis, but stay at this level, as display of BAM files does take time to load!
 
-
+![artemis_loadbam](images/module2_image9.png)
 
 
 
