@@ -14,7 +14,7 @@
 
 ## 1. Introduction & Aims <a name="introduction"></a>
 
-The re-sequencing of a genome typcially aims to capture information on Single Nucleotide Polymorphisms (SNPs), INsertions and DELetions (INDELs) and Copy Number Variants (CNVs) between representatives of the same species. A reference genome must already exist (at least for a very closely related species). Whether one is dealing with different bacterial isolates, with different strains of single-celled parasites, or indeed with genomes of different human individuals, the principles are essentially the same. Instead of assembling the newly generated sequence reads de novo to produce a new genome sequence, it is easier and much faster to align or map the new sequence data to the reference genome (please note that we will use the terms “aligning” and “mapping” interchangeably). One can then readily identify SNPs, INDELs, and CNVs that distinguish closely related populations or individual organisms and may thus learn about genetic differences that may cause drug resistance or increased virulence in pathogens, or changed susceptibility to disease in humans. One important prerequisite for the mapping of sequence data to work is that the reference and the re-sequenced subject have the same genome architecture. Once you are familiar with viewing short read mapping data you may also find it helpful for quality checking your sequencing data and your de novo assemblies.
+The re-sequencing of a genome typically aims to capture information on Single Nucleotide Polymorphisms (SNPs), INsertions and DELetions (INDELs) and Copy Number Variants (CNVs) between representatives of the same species. A reference genome must already exist (at least for a very closely related species). Whether one is dealing with different bacterial isolates, with different strains of single-celled parasites, or indeed with genomes of different human individuals, the principles are essentially the same. Instead of assembling the newly generated sequence reads de novo to produce a new genome sequence, it is easier and much faster to align or map the new sequence data to the reference genome (please note that we will use the terms “aligning” and “mapping” interchangeably). One can then readily identify SNPs, INDELs, and CNVs that distinguish closely related populations or individual organisms and may thus learn about genetic differences that may cause drug resistance or increased virulence in pathogens, or changed susceptibility to disease in humans. One important prerequisite for the mapping of sequence data to work is that the reference and the re-sequenced subject have the same genome architecture. Once you are familiar with viewing short read mapping data you may also find it helpful for quality checking your sequencing data and your de novo assemblies.
 
 The computer programme Artemis allows the user to view genomic sequences and EMBL/GenBank (NCBI) annotation entries in a highly interactive graphical format. Artemis also allows the user to view mapped sequencing reads from e.g. Illumina, or PacBio sequencers. See http://www.sanger.ac.uk/resources/software/artemis/ngs/.
  
@@ -52,7 +52,7 @@ There are multiple short-read alignment programs, each with its own strengths, w
 
 We quote from http://bio-bwa.sourceforge.net/ the following:
 
-“BWA is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome. It consists of three algorithms: BWA-backtrack, BWA-SW and BWA-MEM. The first algorithm is designed for Illumina sequence reads up to 100bp, while the rest two for longer sequences ranged from 70bp to 1Mbp. BWA-MEM and BWA-SW share similar features such as long-read support and split alignment, but BWA-MEM, which is the latest, is generally recommended for high-quality queries as it is faster and more accurate. BWA-MEM also has better performance than BWA-backtrack for 70-100bp Illumina reads.”
+“BWA is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome. It consists of three algorithms: BWA-backtrack, BWA-SW and BWA-MEM. The first algorithm is designed for Illumina sequence reads up to 100bp, while the rest two for longer sequences ranged from 70 bp to 1 Mbp. BWA-MEM and BWA-SW share similar features such as long-read support and split alignment, but BWA-MEM, which is the latest, is generally recommended for high-quality queries as it is faster and more accurate. BWA-MEM also has better performance than BWA-backtrack for 70-100bp Illumina reads.”
 
 Although BWA does not call Single Nucleotide Polymorphisms (SNPs) like some short-read alignment programs, e.g. MAQ, it is thought to be more accurate in what it does do and it outputs alignments in the SAM format which is supported by several generic SNP callers such as SAMtools and GATK.
 
@@ -152,14 +152,14 @@ To have a quick look at the first lines of the SAM file you just generated, type
 head mapping.sam
 ```
 
-The SAM/BAM file format is very powerful. It is unlikely that you will need to work with the contents of a SAM/BAM file directly, but it is very informative to visualize it in a viewer and it is a great format to do further analysis with. The format specifications are at http://samtools.sourceforge.net/SAM1.pdf. Below is a brief overview of the information contained in these files.
+The SAM/BAM file format is very powerful. It is unlikely that you will need to work with the contents of a SAM/BAM file directly, but it is very informative to visualise it in a viewer and it is a great format to do further analysis with. The format specifications are at http://samtools.sourceforge.net/SAM1.pdf. Below is a brief overview of the information contained in these files.
 
 ![sam_bam](images/module2_image6.png)
 
 
 Next we want to change the file format from SAM to BAM. While files in SAM format store their information as plain text, the BAM format is a binary representation of that same information. One reason to keep the alignment files in BAM rather than in SAM format is that the binary files are a lot smaller than the plain text files, i.e. the BAM format saves expensive storage space (sequence data are generated at an ever increasing rate!) and reduces the time the computer has to wait for slow disk access to read or write data.
 
-Many visualization tools can read BAM files. But first a BAM file has to be sorted (by chromosome/reference sequence and position) and indexed, which enables fast working with the alignments.
+Many visualisation tools can read BAM files. But first a BAM file has to be sorted (by chromosome/reference sequence and position) and indexed, which enables fast working with the alignments.
 
 
 ### Step 3:
@@ -202,7 +202,7 @@ We are now ready to open up Artemis and view our newly mapped sequence data.
 ******
 ## 4. Artemis - Viewing Mapped Reads <a name="artemis_reads"></a>
 
-Time to load artemis. Double click on the Artemis Icon or type ‘art &’ on the command line of your terminal window and press return. We will read the reference sequence into Artemis that we have been using as a reference up until now.
+Time to load Artemis. Double click on the Artemis Icon or type ‘art &’ on the command line of your terminal window and press return. We will read the reference sequence into Artemis that we have been using as a reference up until now.
 
 ```shell
 # type (or copy and paste) the following into the terminal
@@ -439,4 +439,5 @@ Useful cutoff values are e.g. DP of at least 10 and Qual of at least 30.
 
 
 ******
+## License
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
