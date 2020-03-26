@@ -33,7 +33,7 @@ The aims of this module are to:
 
 To learn about sequence read mapping and the use of Artemis in conjunction with NGS data we will work with real data from the bacterial pathogen Chlamydia.
 
-*C. trachomatis* is one of the most prevalent human pathogens in the world, causing a variety of infections. It is the leading cause of sexually transmitted infections (STIs), with an estimated 131 million new cases each year. Additionally, it is also the leading cause of preventable infectious blindness with tens of millions of people thought to have active disease. The STI strains of Chlamydia can be further subdivided into those that are restricted to the genital tract and the more invasive type know as the lymphogranuloma venereum or LGV biovar. Despite the large differences in the site of infection and the disease severity and outcome there are few whole-gene differences that distinguish any of the different types of C. trachomatis. As you will see most of the variation lies at the level of SNPs.
+*Chlamydia trachomatis* is one of the most prevalent human pathogens in the world, causing a variety of infections. It is the leading cause of sexually transmitted infections (STIs), with an estimated 131 million new cases each year. Additionally, it is also the leading cause of preventable infectious blindness with tens of millions of people thought to have active disease. The STI strains of Chlamydia can be further subdivided into those that are restricted to the genital tract and the more invasive type know as the lymphogranuloma venereum or LGV biovar. Despite the large differences in the site of infection and the disease severity and outcome there are few whole-gene differences that distinguish any of the different types of *C. trachomatis*. As you will see most of the variation lies at the level of SNPs.
 
 In this part of the course we will align the Illumina reads from a generated from the New Variant Swedish *C. trachomatis* strain (known as NV) against a reference sequence (L2). The NV strain caused a European health alert in 2006. During this time it became the dominant strain circulating in some European countries and began to spread world wide. The reason for this was that it evaded detection by the widely used PCR-based diagnostic test. During the course of this exercise you will identify the reason why this isolate confounded the standard assay.
 
@@ -94,7 +94,7 @@ ls -lrt
 
 
 ### Step 1:
-Our reference sequence for this exercise is a Chlamydia trachomatis LGV strain called L2. The sequence file against which you will align your reads is called L2_cat.fasta. This file contains a concatenated sequence in FASTA format consisting of the genome and a plasmid. To have a quick look at the first 10 lines of this file, type:
+Our reference sequence for this exercise is a *C. trachomatis* LGV strain called L2. The sequence file against which you will align your reads is called L2_cat.fasta. This file contains a concatenated sequence in FASTA format consisting of the genome and a plasmid. To have a quick look at the first 10 lines of this file, type:
 
 ```shell
 # type (or copy and paste) the following into the terminal
@@ -212,11 +212,11 @@ art &
 # "&" allows a program or task to run in the background, allowing you to still use the command line if needed.
 ```
 
-Once you see the initial Artemis window, open the file L2_cat.fasta via File – Open. Just to remind you, this file contains a concatenated sequence consisting of the C. trachomatis LGV strain ‘L2’ chromosome sequence along with its plasmid.
+Once you see the initial Artemis window, open the file L2_cat.fasta via File – Open. Just to remind you, this file contains a concatenated sequence consisting of the *C. trachomatis* LGV strain ‘L2’ chromosome sequence along with its plasmid.
 
 ![artemis_load](images/module2_image7.png)
 
-Now load up the annotation file for the C. trachomatis LGV strain L2 chromosome.
+Now load up the annotation file for the *C. trachomatis* LGV strain L2 chromosome.
 
 ![artemis_loadfasta](images/module2_image8.png)
 
@@ -324,7 +324,7 @@ This is where the ‘Inferred Size’ view for the reads is useful. If you chang
 
 ![artemis_deletion](images/module2_image24.png)
 
-You can also view multiple BAM files at the same time. Remember that a BAM file is a processed set of aligned reads from (in this case) one bacterium aligned against a reference sequence. So in principle we can view multiple different bacterial isolates mapped against the same reference concurrently. The C. trachomatis isolate you are going to read in is C. trachomatis strain L2b. It is more closely related to the reference sequence that we have been using, hence the similar name.
+You can also view multiple BAM files at the same time. Remember that a BAM file is a processed set of aligned reads from (in this case) one bacterium aligned against a reference sequence. So in principle we can view multiple different bacterial isolates mapped against the same reference concurrently. The *C. trachomatis* isolate you are going to read in is *C. trachomatis* strain L2b. It is more closely related to the reference sequence that we have been using, hence the similar name.
 
 We are not going to redo the mapping for a new organism, instead we have pre-processed the relevant FASTQ data for you. The file you will need is called L2b.bam. Follow the instructions below. Start by going back to a normal stacked read view and zooming in more detail.
 
