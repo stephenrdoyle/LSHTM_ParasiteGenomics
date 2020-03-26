@@ -22,7 +22,7 @@ The computer programme Artemis allows the user to view genomic sequences and EMB
 - To show how Next Generation Sequencing data can be viewed in Artemis alongside your chosen reference using Chlamydia as an example: navigation, read filtering, read coverage, views.
 - To show how sequence variation data such as SNPs, INDELs, CNVs can be viewed in single and multiple BAM files, and BCF variant filtering.
 
-
+[↥ **Back to top**](#top)
 
 ## 2. Background <a name="background"></a>
 
@@ -38,6 +38,8 @@ In this part of the course we will align the Illumina reads from a generated fro
 ### Workflow of re-sequencing, alignment, and in silico analysis
 ![Resequencing workflow](images/module2_image1.png)
 --------------------------------------------------------------------------------
+
+[↥ **Back to top**](#top)
 
 ## 3. Short Read Alignment <a name="short_read_alignment"></a>
 There are multiple short-read alignment programs, each with its own strengths, weaknesses, and caveats. Wikipedia has a good list and description of each. Search for “short-read sequence alignment” if you are interested. We are going to use BWA:
@@ -168,6 +170,8 @@ samtools index NV.bam
 Stage 6:
 We are now ready to open up Artemis and view our newly mapped sequence data.
 
+[↥ **Back to top**](#top)
+
 ## 4. Artemis - Viewing Mapped Reads <a name="artemis_reads"></a>
 ### Load Artemis and your data
 Double click on the Artemis Icon or type ‘art &’ on the command line of your terminal window and press return. We will read the reference sequence into Artemis that we have been using as a reference up until now.
@@ -235,6 +239,7 @@ So this is not the actual library fragment size, although you would expect it to
 
 ![artemis_inferred_size](images/module2_image17.png)
 
+[↥ **Back to top**](#top)
 
 ## 5. Artemis - Viewing SNPs <a name="artemis_snps"></a>
 Start by returning your view back to ‘Stack’ view
@@ -254,6 +259,8 @@ If you zoom in further, the sequence of the individual sequence reads and the ac
 ![artemis_zoomsnps](images/module2_image21.png)
 
 Many SNP examples are quite clear, however this is not always the case. What if the read depth is very low? If there are only two reads mapping, the reference is T and both reads are C is this enough evidence to say that the genomes are different? What if there are many reads mapping and out of e.g. 100 base calls at a particular position 50 are called as G and 50 are called as T. This could be due to a mixed infection/population that was sequenced, or this would be typical for a heterozygous locus in a diploid genome…
+
+[↥ **Back to top**](#top)
 
 ## 6. Chlamydia example <a name="chlamydia_example"></a>
 
@@ -302,6 +309,8 @@ If you right-click over the top BAM window and select BAM files you can individu
 Now go back to the plasmid region at the end of the genome sequence and have a look at the previously un-mapped region located around base position 1044200. You can see that the newly added BAM file (for L2b) shows no such deletion with reads covering this region (as shown below). Have a look at the inferred read sizes, too.
 
 ![artemis_selectbams](images/module2_image28.png)
+
+[↥ **Back to top**](#top)
 
 ## 7. Looking at SNPs in more detail <a name="snps"></a>
 So far we have looked at SNP variation rather superficially. In reality you would need more information to understand the effect that the sequence change might have on, for example, coding capacity. For this we can view a different data type called Variant Call Format (VCF). In analogy to the SAM/BAM file formats, VCF files are essentially plain text files while BCF files represent the binary, usually compressed versions of VCF files. VCF format was developed to represent variation data from the 1000 human genome project and is well accepted as a standard format for this type of data.
@@ -371,3 +380,5 @@ Like the BAM views you can also remove or include SNPs etc based on for example 
 Useful cutoff values are e.g. DP of at least 10 and Qual of at least 30.
 
 ![vcf_filter2](images/module2_image37.png)
+
+[↥ **Back to top**](#top)
