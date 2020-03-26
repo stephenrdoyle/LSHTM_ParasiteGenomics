@@ -90,7 +90,7 @@ The second tool to assess the quality of your raw data is **Kraken** (https://cc
 
 Kraken works by aligning kmers from your DNA sequence against known kmer frequency data for different species in a kraken database. It will therefore only assign species that it knows, else, it calls the sequence “unclassified”. Most kraken databases contain comprehensive bacterial and viral species lists, however, it may also contain human and mouse profiles. Kraken databases can be customised to include any species with DNA sequence available. Therefore, if you are investigating one of the species in the kraken database, running kraken will given you a good estimate of the amount of reads specifically from that species. If your species is not in the database, then you would expect most if not all reads to fall into the “unclassified” category. Either way, this approach can serve as an effective screen for contaminants in your sequencing reads.
 
-Tasks:
+### Tasks:
 - run fastqc
 
 - visualise output of FastQC using MultiQC and check sequence quality
@@ -125,7 +125,7 @@ The output of kraken-report is tab-delimited, with one line per taxon. The fie
 - indented scientific name
 
 
-Questions:
+### Questions:
 - FastQC / MultiQC output
 	- What are the similarities / differences between read 1 and read 2?
 	- Are the base quality and nucleotide frequency distributions relatively level, or 	are they uneven?
@@ -138,6 +138,7 @@ Questions:
 
 ******
 ## Step 2: Estimating your genome size from raw sequence data <a name="step2"></a>
+
 In this tutorial, we are in the unique position to already know what the length of the chromosome sequence were are trying to assemble. However, if sequencing a new species for the first time, we may not know what the genome size is. Knowledge of the genome size can be an important piece of information in its own right, however, it can also be useful to help parameterise some stages of the genome assembly.
 
 We can estimate the genome size based a calculation of the kmer coverage of our reads. We introduced kmers in the last section – they are simply a string of nucleotides of a given length. The relationship between kmer coverage and genome size is described by:
@@ -155,7 +156,7 @@ You can explore some examples of kmer spectra and genome size estimates on the G
 **Figure 3**. Example GenomeScope output. Kmer coverage is presented on the x-	axis, and kmer frequency on the y-axis.
 
 
-Tasks:
+### Tasks:
 - Run jellyfish on your raw sequencing data
 
 - Upload your kmer count data to GenomeScope and estimate the genome size
@@ -181,7 +182,7 @@ jellyfish histo -t 4 reads.jf > reads.histo
 **Figure 4**. GenomeScope webpage. http://qb.cshl.edu/genomescope/
 
 
-Questions:
+### Questions:
 - what is my predicted genome / chromosome size?
 
 - how does it compare to the expected size?
@@ -192,6 +193,7 @@ Questions:
 
 ******
 ## Step 3: Performing a genome assembly using either Illumina short read or Pacbio long read data <a name="step3"></a>
+
 Now that you have performed some QC on your raw data and estimated your genome size, it is now time to perform a genome assembly. There are a huge number of tools dedicated to genome assembly; OMICS tools describes 163 dedicated for de novo genome assembly (https://omictools.com/genome-assembly-category), however, there are likely others. Furthermore, there are likely to be at least as many tools that value-add to a genome assembly, including but not limited to scaffolders, circularisers, gap closers etc. The choice of assembler and subsequent add-ons is dependent on the type of data available, type of organism, i.e., haploid, diploid etc, genome size, and complexity of the task among other variables.  
 
 The aim of this practical is not to assess these tools or promote any particular tool(s) in any meaningful way, but to compare and contrast two technologies commonly used in genome assembly: Illumina short-read and Pacbio long read.
@@ -209,7 +211,7 @@ One feature of all sequencing technologies is that sequence quality declines ove
 
 The process of error correction does take a substantial amount of time and compute resources. It has recently been demonstrated that the second error correction step can be sacrificed to significantly increase assembly speed and the cost of assembly base-level accuracy, i.e., it is uncorrected, and so the assembly error rate is similar to the read error rate. We will perform a raw Pacbio assembly using Minimap and Miniasm to compare with our other two assemblies.
 
-Tasks:
+### Tasks:
 - Run the Miniasm command to generate your first Pacbio assembly of Chromosome IV
 
 - The Canu and Spades assemblies have been provided for you
@@ -264,7 +266,7 @@ assembly-stats SPADES_SM_V7_chr4.consensus_contigs.fasta
 **Table 1**. Comparison of assembly stats
 ![assembly_stats](images/module4_image7.png)
 
-Questions:
+### Questions:
 - how do my assemblies compare to the expected size of chomosome IV?
 
 - what is the impact of long reads versus short reads on assembly contiguity?
@@ -275,10 +277,11 @@ Questions:
 
 ******
 ## Step 4: Comparison of your assemblies against the known reference sequence <a name="step4"></a>
+
 Now that we have three independent genome assemblies, we would like to see how they compare to the reference chromosome IV sequence. This is only possible because we already have a reference sequence, however, if you have a closely related species with a more contiguous reference, it might be worth trying. If you do not have a good reference to compare against, you could simply compare different versions of the de novo assembly to see how they compare (we would like you to do this if you have time).
 There are a number of ways to compare genomes. We will be using nucmer to do the DNA vs DNA sequence comparison, and the web application Assemblytics (http://assemblytics.com/) to visualise the comparison. Assemblytics is a nice way to visualise this comparison, as it not only allows a “zoomed” out view of how the genomes compare (via the Interactive dot plot), but it also provides base-level and small structural variant statistics. These can be informative particular when comparing different sequencing technologies, ie., Illumina versus Pacbio, and may reveal inherent biases in each.
 
-Tasks:
+### Tasks:
 - Run nucmer of each of the three comparisons, ie. Ref vs PB, ref vs miniasm, ref vs illumina
 
 - Explore each of the interactive dotplots
@@ -321,7 +324,7 @@ To help you visualise and interpret the interactive dot plot, we have provided s
 **Figure 8**. Schematic of dot plot examples. Originally from goo.gl/P4QTFd; adapted from http://slideplayer.com/slide/10357320/
 
 
-Questions:
+### Questions:
 - how does each assembly compare against the reference?
 
 - particularly in the ref vs PB dot plot comparison, what sequence features are found and sequence ends, and why might they be there?
@@ -334,6 +337,7 @@ Questions:
 
 ******
 ## Step 5: Further exploration of your genome assemblies <a name="step5"></a>
+
 Now that we have compared and contrasted our initial genome assemblies, we would now want to think about ways of improving them to make them more contiguous – each of our assemblies is still some way off being a single sequence, i.e., a single chromosome. One way would be to generate additional, complementary data that might be used to scaffold the existing contigs together to create much longer sequences. Approaches include generating mate-pair libraries, or alternate long range sequencing technologies such as Nanopore, optical mapping, or HiC to name a few. However, this is obviously outside the scope of this tutorial.
 Our assemblies are currently represented in a FASTA file; each individual sequence is presented separate from each other, and there is no information that links each sequence to each other. However, in generating the assembly, the assembler catalogs overlaps between sequences with the aim of joining / extending existing sequences; if there is a single overlap, a join is made, however, if there are two or more overlaps between which the assembler cannot confidently make a decision, it will not make the join and report multiple sequences. These multiple paths between sequences might be due to genetic variants, haplotypes, repeats etc. Importantly, some assemblers record these multiple paths in a structure known as a genome graph. These genome graphs are composed of:
 - nodes – these are the individual sequences presented in the FASTA
@@ -342,7 +346,7 @@ Our assemblies are currently represented in a FASTA file; each individual sequen
 
 We will use the tool Bandage (https://rrwick.github.io/Bandage/) to visualise the genome graphs produced by miniasm and spades assemblers, and demonstrate how to extract extended sequences from these graphs to extend your genome assemblies. We will compare your new sequence against the reference using the web tool, Genome Ribbon (http://genomeribbon.com/), which is similar to ACT, but is more suited for larger genomes.
 
-Tasks:
+### Tasks:
 - visualise and compare the Pacbio miniasm and Illumina Spades genome graphs
 
 - using the Pacbio miniasm graph, construct a path through the graph, making a new sequence
@@ -437,7 +441,7 @@ show-coords -lTH -L10000 out.delta  > out.coords
 
 ![view_improved](images/module4_image17.png)
 
-Questions:
+### Questions:
 - what are the main differences between the Pacbio and Illumina genome graphs?
 
 - what is the length of your new sequence?
