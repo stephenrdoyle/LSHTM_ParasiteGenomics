@@ -3,12 +3,11 @@
 
 ## Table of contents
 1. [Introduction & Aims](#introduction)
-2. [Background](#background)
-3. [Artemis Exercise 1](#exercise1)
-4. [Artemis Exercise 2](#exercise2)
-5. [Artemis Exercise 3](#exercise3)
-6. [Artemis Exercise 4](#exercise4)
-7. [Artemis Exercise 5](#exercise5)
+2. [Artemis Exercise 1](#exercise1)
+3. [Artemis Exercise 2](#exercise2)
+4. [Artemis Exercise 3](#exercise3)
+5. [Artemis Exercise 4](#exercise4)
+6. [Artemis Exercise 5](#exercise5)
 
 **Instructors**: [Adam Reid](mailto:ar11@sanger.ac.uk) & [Stephen Doyle](mailto:sd21@sanger.ac.uk), Wellcome Sanger Institute
 
