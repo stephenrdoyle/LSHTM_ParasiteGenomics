@@ -7,7 +7,7 @@ Teaching materials for the London School of Hygiene and Tropical Medicine Parasi
 ### Course manual
 1. Module 1 - Artemis
      - [Introductory presentation]()
-     - [Online manual]()
+     - [Online manual](Module_1_Artemis.md)
      - [Manual PDF version]()
 
 2. Module 2 - Short Read mapping
