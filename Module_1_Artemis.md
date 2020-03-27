@@ -26,8 +26,7 @@ The aim of this module is to become familiar with the basic functions of Artemis
 
  ******
 ## Artemis Exercise 1 <a name="exercise1"></a>
- ***Starting up the Artemis software***
-
+ ***Starting up the Artemis software***  
  Double click the Artemis icon on the desktop.
 
  A small start-up window will appear (see below). The directory Module_3_Artemis contains all files you will need for this module.
@@ -39,28 +38,20 @@ The aim of this module is to become familiar with the basic functions of Artemis
 ![](images/module1_image2.png)
 
 
-
-
-
-
-
-
- ***Loading an annotation file (entry) into Artemis***
- Hopefully you will now have an Artemis window like this! If not, ask a demonstrator for assistance.
+***Loading an annotation file (entry) into Artemis***  
+Hopefully you will now have an Artemis window like this! If not, ask a demonstrator for assistance.
 
 ![](images/module1_image3.png)
 
- Now follow the numbers to load the annotation file for the Salmonella Typhi chromosome.
+Now follow the numbers to load the annotation file for the Salmonella Typhi chromosome.
 
 ![](images/module1_image4.png)
 
 
-***The basics of Artemis***
-
+***The basics of Artemis***  
 Now you have an Artemis window open let’s look at what is in there.
 
 ![](images/module1_image5.png)
-
 
 
  1. Drop-down menus:
@@ -79,8 +70,7 @@ Now you have an Artemis window open let’s look at what is in there.
 
 
 
- ***Getting around in Artemis***
-
+***Getting around in Artemis***  
 There are three main ways of getting to a particular DNA region in Artemis:
 1. the Goto drop-down menu;
 2. the Navigator; and,
@@ -90,8 +80,7 @@ There are three main ways of getting to a particular DNA region in Artemis:
 
 
 
-**1. The ‘Goto’ menu**
-
+**1. The ‘Goto’ menu**  
  The functions on this menu (below the Navigator option) are shortcuts for getting to locations within a selected feature or for jumping to the start or end of the DNA sequence. This is really intuitive so give it a try!
 
 
@@ -103,28 +92,27 @@ There are three main ways of getting to a particular DNA region in Artemis:
 
 
 
- **Suggested tasks:**
- 1. Zoom out, select / highlight a large region of sequence by clicking the left hand button and dragging the cursor then go to the start and end of this selected region.
- 2. Select a CDS then go to the start and end.
- 3. Go to the start and end of the genome sequence.
- 4. Select a CDS. Within it, go to a base (nucleotide) and/or amino acid of your choice.
- 5. Highlight a region then, from the right click menu, select ‘Zoom to Selection’.
+**Suggested tasks:**  
+1. Zoom out, select / highlight a large region of sequence by clicking the left hand button and dragging the cursor then go to the start and end of this selected region.
+2. Select a CDS then go to the start and end.
+3. Go to the start and end of the genome sequence.
+4. Select a CDS. Within it, go to a base (nucleotide) and/or amino acid of your choice.
+5. Highlight a region then, from the right click menu, select ‘Zoom to Selection’.
 
 
-**2. Navigator**
-
- The Navigator panel is fairly intuitive so open it up and give it a try.
+**2. Navigator**  
+The Navigator panel is fairly intuitive so open it up and give it a try.
 
  ![](images/module1_image7.png)
 
- **Suggestions about where to go:**
- 1. Think of a number between 1 and 4809037 and go to that base (notice how the cursors on the horizontal sliders move with you).
- 2. Your favourite gene name (it may not be there so you could try ‘fts’).
- 3. Use ‘Goto Feature With This Qualifier value’ to search the contents of all qualifiers for a particular term. For example using the word ‘pseudogene’ will take you to the next feature with the word ‘pseudogene’ in any of its qualifiers. Note how repeated clicking of the ‘Goto’ button takes you to the following pseudogene in the order that they occur on the chromosome.
- 4. Look at Appendix VI which is a functional classification scheme used for the annotation of S. Typhi. Each CDS has a class qualifier best describing its function. Use the ‘Goto Feature With This Qualifier value’ search to look for CDSs belonging to a class of interest by searching with the appropriate class values.
- 5. tRNA genes. Type ‘tRNA’ in the ‘Goto Feature With This Key’.
- 6. Regulator-binding DNA consensus sequence (real or made up!). Note that degenerate base values can be used (Appendix VIII).
- 7. Amino acid consensus sequences (real or made up!). You can use ‘x’s. Note that it searches all six reading frames regardless of whether the amino acids are encoded or not.
+**Suggestions about where to go:**  
+1. Think of a number between 1 and 4809037 and go to that base (notice how the cursors on the horizontal sliders move with you).
+2. Your favourite gene name (it may not be there so you could try ‘fts’).
+3. Use ‘Goto Feature With This Qualifier value’ to search the contents of all qualifiers for a particular term. For example using the word ‘pseudogene’ will take you to the next feature with the word ‘pseudogene’ in any of its qualifiers. Note how repeated clicking of the ‘Goto’ button takes you to the following pseudogene in the order that they occur on the chromosome.
+4. Look at Appendix VI which is a functional classification scheme used for the annotation of S. Typhi. Each CDS has a class qualifier best describing its function. Use the ‘Goto Feature With This Qualifier value’ search to look for CDSs belonging to a class of interest by searching with the appropriate class values.
+5. tRNA genes. Type ‘tRNA’ in the ‘Goto Feature With This Key’.
+6. Regulator-binding DNA consensus sequence (real or made up!). Note that degenerate base values can be used (Appendix VIII).
+7. Amino acid consensus sequences (real or made up!). You can use ‘x’s. Note that it searches all six reading frames regardless of whether the amino acids are encoded or not.
 
 
 - What are Keys and Qualifiers? See Appendix IV
@@ -136,24 +124,24 @@ Clearly there are many more features of Artemis which we will not have time to e
 [↥ **Back to top**](#top)
 
 ******
-## Artemis Exercise 2 <a name="exercise2"></a>
+## Artemis Exercise 2 <a name="exercise2"></a>  
 This part of the exercise uses the files and data you already have loaded into Artemis from Part I. By a method of your choice go to the region from bases 2188349 to 2199512 on the DNA sequence. This region is bordered by the fbaB gene which codes for fructose-bisphosphate aldolase. You can use the Navigator function discussed previously to get there. The region you arrive at should look similar to that shown below.
 
  ![](images/module1_image8.png)
 
 Once you have found this region have a look at some of the information available:
 
-1. Annotation
-     -    If you click on a particular feature you can view the annotation associated with it: select a CDS feature (or any other feature) and click on the ‘Edit’ menu and select ‘Selected Feature in Editor’. A window will appear containing all the annotation that is associated with that CDS. The format for this information is constrained by that which can be submitted to the EMBL database.
+1. Annotation  
+- If you click on a particular feature you can view the annotation associated with it: select a CDS feature (or any other feature) and click on the ‘Edit’ menu and select ‘Selected Feature in Editor’. A window will appear containing all the annotation that is associated with that CDS. The format for this information is constrained by that which can be submitted to the EMBL database.
 
-2. Viewing amino acid or protein sequence
-     - Click on the ‘View’ menu and you will see various options for viewing the bases or amino acids of the feature you have selected, in two formats i.e. EMBL or fasta. This can be very useful when using other programs that are not integrated into Artemis e.g. those available on the Web that require you to cut and paste sequence into them.
+2. Viewing amino acid or protein sequence  
+- Click on the ‘View’ menu and you will see various options for viewing the bases or amino acids of the feature you have selected, in two formats i.e. EMBL or fasta. This can be very useful when using other programs that are not integrated into Artemis e.g. those available on the Web that require you to cut and paste sequence into them.
 
 3. Plots/Graphs
-     - Feature plots can be displayed by selecting a CDS feature then clicking ‘View’ and ‘Feature Plots’. The window which appears shows plots predicting hydrophobicity, hydrophilicity and coiled-coil regions for the protein product of the selected CDS.
+- Feature plots can be displayed by selecting a CDS feature then clicking ‘View’ and ‘Feature Plots’. The window which appears shows plots predicting hydrophobicity, hydrophilicity and coiled-coil regions for the protein product of the selected CDS.
 
 4. Load additional files
-     - You should be able to see the results from Prosite searches, run on the translation of each CDS, as pale-green boxes on the grey DNA lines. The results from the Pfam protein motif searches are not yet shown, but can be viewed by loading the appropriate file. Click on ‘File’ then ‘Read an Entry’ and select the file PF.tab. Each Pfam match will appear as a coloured blue feature in the main display panel on the grey DNA lines. To see the details click the feature then click ‘View’ then ‘Selection’ or click ‘Edit’ then ‘Selected Features in Editor’. Please ask if you are unsure about Prosite and Pfam.
+- You should be able to see the results from Prosite searches, run on the translation of each CDS, as pale-green boxes on the grey DNA lines. The results from the Pfam protein motif searches are not yet shown, but can be viewed by loading the appropriate file. Click on ‘File’ then ‘Read an Entry’ and select the file PF.tab. Each Pfam match will appear as a coloured blue feature in the main display panel on the grey DNA lines. To see the details click the feature then click ‘View’ then ‘Selection’ or click ‘Edit’ then ‘Selected Features in Editor’. Please ask if you are unsure about Prosite and Pfam.
 
 Further information on specific Prosite or Pfam entries can be found on the web at:
 http://ca.expasy.org/prosite and http://pfam.sanger.ac.uk/
@@ -201,7 +189,6 @@ To make this process faster and clearer,
 
 ******
 ## Artemis Exercise 3 <a name="exercise3"></a>
-
 There are many examples where anomalous regions of DNA within a genome have been shown to carry laterally acquired DNA. In this part of the exercise we are going to look at several of these regions in more detail. Starting with the whole genome view, note down the approximate positions and characteristics of the three regions indicated above. Remember the locations of the peaks are given in the graph window if you click the left mouse button within it.
 
 ![](images/module1_image13.png)
@@ -209,8 +196,6 @@ There are many examples where anomalous regions of DNA within a genome have been
 ![](images/module1_image14.png)
 
 We will now zoom back into the genome to look in more detail at the first of these three peaks. Using the left mouse button, highlight the anomalous region of the graph - this will also highlight the region in the main display. You can then use the ‘right mouse button menu’ in the main display to ‘Zoom to selection’ - you may need to zoom out from there. Remember that in order to see the CDS features lying within this region you will need to turn the annotation (S_typhi.tab) entry back on.
-
-
 
 The region you should be looking at is shown below and is a classical example of a Salmonella pathogenicity island (SPI). The definitions of what constitutes a pathogenicity island are quite diverse. However, below is a list of characteristics which are commonly seen within these regions, as described by Hacker et al., 1997.
 
@@ -228,7 +213,6 @@ Have a look in and around this region and look for some of these features.
 Use one of the methods you have already used to take you to the second region of interest that you noted down.
 
 ![](images/module1_image16.png)
-
 
 Region two acts as a cautionary note when looking at anomalous regions within a genome. Have a look at the features and annotation of the CDSs within this region:
 - Does this region have any of the characteristics of pathogenicity island?
@@ -290,11 +274,8 @@ Even from this preliminary analysis it is clear that the prophage occupies a fai
 
 ![](images/module1_image23.png)
 
-
 While the region in highlighted, click on the ‘Create’ menu and select ‘Create feature from base range’. A feature edit window will appear. The default ‘Key’ value given by Artemis when creating a new feature is ‘CDS’. With this ‘Key’ the newly created feature would automatically be put on the translation line. However, if we change this to ‘misc_feature’ (an option in the ‘Key’ drop down menu in the top left hand corner of the Edit window), Artemis will place this feature on the DNA line. This is perhaps more appropriate and is easier to visualise. You can also add a qualifier, such as ‘/label’: select ‘label’ from the ‘Add Qualifier’ list and click ‘Add Qualifier’, ‘/label=’ will appear in the text window; add text of your choice, then click ‘OK’. That text will be used as a feature label to be displayed in the main sequence view panel.
 To see how well you have done, turn the spi7.tab.
-
-
 
 Your final task is to write out the spi7 files in EMBL submission format, and create a merged annotation and sequence file in EMBL submission format. In Artemis you are going to copy the annotation features from the ‘.tab’ file into the ‘.dna’ file, and then save this entry in EMBL format. Don’t worry about error messages popping up. This is because not all entries are accepted by the EMBL database.
 
@@ -342,7 +323,6 @@ A small window will appear asking you whether you are sure you want to merge the
 ![](images/module1_image30.png)
 
 **Tip:** To select more than one feature (of any type) you must hold the shift key down.
-
 
 You have now corrected the annotation of the gene. If there is some time left: Is there anything more to correct in this gene? You might need to run another blast search to find out about this.
 
