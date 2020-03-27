@@ -63,19 +63,19 @@ Now you have an Artemis window open let’s look at what is in there.
 
 
 
- 1.	Drop-down menus:
+ 1. Drop-down menus:
      - There’s lots in there so don’t worry about all the details right now.
- 2.  Entry (top line):
+ 2. Entry (top line):
      - shows which entries are currently loaded with the default entry highlighted in yellow (this is the entry into which newly created features are created).Selected feature: the details of a selected feature are shown here; in this case gene STY0004 (yellow box surrounded by thick black line).
- 3.	Main sequence view panel:
+ 3. Main sequence view panel:
      - The central 2 grey lines represent the forward (top) and reverse (bottom) DNA strands. Above and below those are the 3 forward and 3 reverse reading frames. Stop codons are marked on the reading frames as black vertical bars. Genes and other annotated features (eg. Pfam and Prosite matches) are displayed as coloured boxes. We often refer to predicted genes as coding sequences or CDSs.
- 4.	Codon translation panel:
+ 4. Codon translation panel:
      - This panel has a similar layout to the main panel but is zoomed in to show nucleotides and amino acids. Double click on a CDS in the main view to see the zoomed view of the start of that CDS. Note that both this and the main panel can be scrolled left and right (7, below) zoomed in and out (6, below).
- 5.	Feature panel:
+ 5. Feature panel:
      - This panel contains details of the various features, listed in the order that they occur on the DNA. Any selected features are highlighted. The list can be scrolled (8, below).
- 6.	Sliders for zooming view panels.
- 7.	Sliders for scrolling along the DNA.
- 8. 	Slider for scrolling feature list.
+ 6. Sliders for zooming view panels.
+ 7. Sliders for scrolling along the DNA.
+ 8. Slider for scrolling feature list.
 
 
 
