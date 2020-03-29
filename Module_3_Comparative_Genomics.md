@@ -190,7 +190,7 @@ Next, you need to find the regions of synteny between the sequences.
 
 When you have determined where there is synteny, zoom in to the region for a detailed look. At this point you can add the annotation from the files called Leish.embl.gz and Tbrucei.embl.gz.
 
-**Questions:**
+**Questions**
 - Can you see conserved gene order between the two species?
 - Can you see any region where similarity is broken up?
      - Zoom in and look at some of the genes encoded within these regions.
