@@ -17,7 +17,7 @@ Teaching materials for the London School of Hygiene and Tropical Medicine Parasi
 
 3. Module 3 - Comparative Genomics
      - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_Module3_ComparativeGenomics.pptx)
-     - [Online manual]()
+     - [Online manual](Module_3_Comparative_Genomics.md)
      - [Manual PDF version]()
 
 4. Module 4 - Genome Assembly
