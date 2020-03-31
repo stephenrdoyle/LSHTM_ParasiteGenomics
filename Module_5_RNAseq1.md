@@ -118,15 +118,158 @@ The Artemis and BAM view windows:
 6.	Sliders for zooming view panels.
 7.	Sliders for scrolling along the DNA.
 
-Right click on the BAM view, select *Graph, then *Coverage.
+Right click on the BAM view, select *Graph*, then *Coverage*.
 
 Right click on the BAM window showing the reads and hover over BAM files. This will show you which colours in the coverage plot relate to which samples. Scroll through the chromosome and see if you can identify genes which might be differentially expressed between SBP and MT parasites. Is looking at the coverage plots alone a reliable way to assess differential expression? Hint: what is the difference between read count and RPKM? Are the libraries all the same size?
 
 ![](images/module5_image3.png)
 
-Select chromosome PccAS_14_v3 from the drop down box on the Entry line.
+Select chromosome *PccAS_14_v3* from the drop down box on the *Entry line*.
 
-Press Ctrl-g and use “Goto Feature With Gene Name” to navigate to the gene PCHAS_1402500. 
+Press *ctrl-g* and use *Goto Feature With Gene Name* to navigate to the gene *PCHAS_1402500*. 
+
+Investigate the coverage for this gene. Does the RNA-seq mapping agree with the gene model in blue?
+
+You can determine read counts and RPKMs for individual genes within Artemis.
+
+Click on the blue gene model, right click on the BAMview window, select Analyse, then RPKM value of selected features. 
+
+Artemis asks whether you want to include introns in the calculations. We are only interested in reads mapping to the spliced transcript, so you should exclude these.  Select Use reads mapped to all reference sequences. Is this important?
+
+After the analysis is done a window will appear behind Artemis.
+
+![](images/module5_image4.png)
+
+This gene looks to be up-regulated in serially blood passaged parasites; SBP samples have RPKMs several times greater than the MT samples. Is it statistically significant? In the next section we will find out.
+
+
+ [↥ **Back to top**](#top)
+
+ ******
+## RNA-seq 1 Exercise 3 - Using Kalliso and Sleuth to identify differentially expressed genes <a name="exercise3"></a>
+
+*Kallisto* is a read mapper, but instead of mapping against the genome it is designed to map against the transcriptome, i.e. the spliced gene sequences inferred from the genome annotation. Rather than tell you where the reads map it’s aim is in quantifying the expression level of each transcript. It is very fast because it uses pseudoalignment rather than true read alignment. 
+
+Kallisto needs an index of the transcript sequences.
+
+```shell
+# type the following into the terminal
+kallisto index -i PccAS_v3_kallisto PccAS_v3_transcripts.fa
+```
+
+Quantify the expression levels of your transcripts for the MT1 sample.
+
+```shell
+# type the following into the terminal
+kallisto quant -i PccAS_v3_kallisto -o MT1 -b 100 MT1_1.fastq.gz MT1_2.fastq.gz
+```
+
+The results are contained in the file *MT1/abundance.tsv*
+
+Use the kallisto quant command four more times, for the MT2 sample and the three SBP samples. **Don't foget this step!!!**
+
+*Sleuth* uses the output from Kallisto to determine differentially expressed genes. It is written in the R statistical programming language, as is almost all RNA-seq analysis software. Helpfully however it produces a web page that allows interactive graphical analysis of the data. However, I would recommend learning R for anyone doing a significant amount of RNA-seq analysis.  It is nowhere near as hard to get started with as full-blown programming languages such as Perl or Python!
+
+We have provided a series of R commands which will get Sleuth running. These are in the file sleuth.R. Open the file and have a look. It is not as hard as it seems, I copied most of this from the manual! To run this R script, you will have to open R:
+
+```shell
+# type the following into the terminal
+R
+```
+
+And then copy and paste all the commands from the file sleuth.R
+
+ [↥ **Back to top**](#top)
+
+ ******
+## RNA-seq 1 Exercise 4 - Using Sleuth to quality check the data <a name="exercise4"></a>
+
+*Sleuth* provides several tabs which we can use to determine whether the data is of good quality and whether we should trust the results we get.
+
+In the web page which has been launched click on Summaries->processed data.
+
+Even though we have used the same number of reads for each sample, there are large differences in the number of reads mapping for each one. Why might this be? Is it a problem?
+
+Select *map -> PCA* from the menus.
+
+The Principal Components Analysis plot shows the relationship between the samples in two dimensions (PC1 and PC2). In this case almost all the variation between the samples is captured by just Principal Component 1. The MT samples are well separated from the SBP samples, meaning that the replicates are more similar to each other than they are to samples from the different condition. This is good.
+
+In some cases we identify outliers, e.g. samples which do not agree with other replicates and these can be excluded. If we don’t have many replicates, it is hard to detect outliers and our power to detect differentially expressed genes is reduced.
+
+ [↥ **Back to top**](#top)
+
+ ******
+## RNA-seq 1 Exercise 5 - Interpreting the results <a name="exercise5"></a>
+
+In the R script we printed out a file of results describing the differentially expressed genes in our dataset. This is called “kallisto.results”.
+
+The file contains several columns, of which the most important are:
+
+Column 1: target_id (gene id)
+Column 2: pval (p value)
+Column 3: qval (p value corrected for multiple hypothesis testing)
+Column 4: b (fold change)
+Column 12: description (some more useful descriptionof the gene than its id) 
+
+With a little Linux magic we can get the list of differentially expressed genes with only the columns of interest as above. The following command will get those genes which have an adjusted p value less than 0,01 and a positive fold change. These genes are more highly expressed in SBP samples.
+
+```shell
+# type the following into the terminal
+cut -f1,3,4,12 kallisto.results | awk ‘$2 < 0.01 && $3 > 0’
+'''
+
+These genes are more highly expressed in MT samples:
+
+```shell
+# type the following into the terminal
+cut -f1,3,4,12 kallisto.results | awk ‘$2 < 0.01 && $3 < 0’
+'''
+
+How many genes are more highly expressed in each condition?
+
+Do you notice any particular genes that come up in the analysis?
+
+The most highly up-regulated genes in MT samples are from the cir family. This is a large, malaria-specific gene family which had previously been proposed to be involved in immune evasion (Lawton et al., 2012). Here however we see many of these genes up-regulated in a form of the parasite which seems to cause the immune system to better control the parasite. This suggests that these genes interact with the immune system in a more subtle way, preventing the immune system from damaging the host. 
+
+Remember PCHAS_1402500? Of course you do. It was the gene we looked at in Artemis that seemed absolutely definitely differentially expressed.
+
+What does Sleuth think about it?
+
+```shell
+# type the following into the terminal
+grep PCHAS_1402500 kallisto.results | cut –f1,3,4,12
+```
+
+Although this gene looked like it was differentially expressed from the plots in Artemis our test did not show it to be so. This might be because some samples tended to have more reads, so based on raw read counts, genes generally look up-regulated in the SBP samples. Alternatively the reliability of only two biological replicates and the strength of the difference between the conditions was not sufficient to be statistically convincing. In the second case increasing the number of biological replicates would give us more confidence about whether there really was a difference. 
+
+In this case, the lower number of reads mapping to MT samples mislead us in the Artemis view. Luckily careful normalisation and appropriate use of statistics saved the day!
+
+If you want to read more about the work related to this data it is published: [Spence et al. (2013).](https://www.ncbi.nlm.nih.gov/pubmed/23719378).
+
+
+ [↥ **Back to top**](#top)
+
+ ******
+## RNA-seq 1 Extended reading <a name="reading"></a>
+
+Key aspects of differential expression analysis
+
+Replicates and power
+In order to accurately ascertain which genes are differentially expressed and by how much it is necessary to use replicated data. As with all biological experiments doing it once is simply not enough. There is no simple way to decide how many replicates to do, it is usually a compromise of statistical power and cost. By determining how much variability there is in the sample preparation and sequencing reactions we can better assess how highly genes are really expressed and more accurately determine any differences. The key to this is performing biological rather than technical replicates. This means, for instance, growing up three batches of parasites, treating them all identically, extracting RNA from each and sequencing the three samples separately. Technical replicates, whereby the same sample is sequenced three times do not account for the variability that really exists in biological systems or the experimental error between batches of parasites and RNA extractions.
+n.b. more replicates will help improve power for genes that are already detected at high levels, while deeper sequencing will improve power to detect differential expression for genes which are expressed at low levels.
+
+P-values vs. q-values
+When asking whether a gene is differentially expressed we use statistical tests to assign a p-value. If a gene has a p-value of 0.05 we say that there is only a 5% chance that it is not really differentially expressed. However, if we are asking this question for every gene in the genome (~5500 genes for Plasmodium), then we would expect to see p-values less than 0.05 for many genes even though they are not really differentially expressed. Due to this statistical problem we must correct the p-values so that we are not tricked into accepting a large number of erroneous results. Q-values are p-values which have been corrected for what is known as multiple hypothesis testing. Therefore it is a q-value of less than 0.05 that we should be looking for when asking whether a gene is differentially expressed.
+
+Alternative software
+If you have a good quality genome and genome annotation such as for model organisms e.g. human, mouse, Plasmodium, I would recommend mapping to the transcriptome for determining transcript abundance. This is even more relevant if you have variant transcripts per gene as you need a tool which will do its best to determine which transcript is really expressed. As well as Kallisto (Bray et al. 2016; PMID: 27043002), there is eXpress (Roberts & Pachter, 2012; PMID: 23160280) which will do this.
+Alternatively you can map to the genome and then call abundance of genes, essentially ignoring variant transcripts. This is more appropriate where you are less confident about the genome annotation and/or you don’t have variant transcripts because your organism rarely makes them or they are simply not annotated. Tophat2 (Kim et al., 2013; PMID: 23618408), HISAT2 (Pertea et al. 2016; PMID: 27560171), STAR (Dobin et al., 2013; PMID: 23104886) and GSNAP (Wu & Nacu, 2010; PMID: 20147302) are all splice-aware RNA-seq read mappers appropriate for this task. You then need to use a tool which counts the reads overlapping each gene model. HTSeq (Anders et al., 2015; PMID: 25260700) is a popular tool for this purpose. Cufflinks (Trapnell et al. 2012; PMID: 22383036) will count reads and determine differentially expressed genes.
+There are a variety of programs for detecting differentially expressed genes from tables of RNA-seq read counts. DESeq2 (Love et al., 2014; PMID: 25516281), EdgeR (Robinson et al., 2010; PMID: 19910308) and BaySeq (Hardcastle & Kelly, 2010; PMID: 20698981) are good examples.
+
+What do I do with a gene list?
+Differential expression analysis results is a list of genes which show differences between two conditions. It can be daunting trying to determine what the results mean. On one hand you may find that that there are no real differences in your experiment. Is this due to biological reality or noisy data? On the other hand you may find several thousands of genes are differentially expressed. What can you say about that?
+Other than looking for genes you expect to be different or unchanged, one of the first things to do is look at Gene Ontology (GO) term enrichment. There are many different algorithms for this, but you could annotate your genes with functional terms from GO using for instance Blast2GO (Conesa et al., 2005; PMID: 16081474) and then use TopGO (Alexa et al., 2005; PMID: 16606683) to determine whether any particular sorts of genes occur more than expected in your differentially expressed genes.
+
 
 
 
