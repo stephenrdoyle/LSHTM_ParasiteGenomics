@@ -3,12 +3,13 @@
 
 ## Table of contents
 1. [Introduction & Aims](#introduction)
-2. [RNAseq1 Exercise 1](#exercise1)
-3. [RNAseq1 Exercise 2](#exercise2)
-4. [RNAseq1 Exercise 3](#exercise3)
-5. [RNAseq1 Exercise 4](#exercise4)
-6. [RNAseq1 Exercise 5](#exercise5)
+2. [RNAseq1 Exercise 1 - Mapping RNA-seq reads to the genome using HISAT2](#exercise1)
+3. [RNAseq1 Exercise 2 - Using Artemis to visualise transcription](#exercise2)
+4. [RNAseq1 Exercise 3 - Using Kallisto and Sleuth to identify differentially expressed genes](#exercise3)
+5. [RNAseq1 Exercise 4 - Using Sleuth to check the quality of the data](#exercise4)
+6. [RNAseq1 Exercise 5 - Interpreting the results](#exercise5)
 7. [RNAseq1 Extended reading](#reading)
+
 
 **Instructors**: [Adam Reid](mailto:ar11@sanger.ac.uk) & [Stephen Doyle](mailto:sd21@sanger.ac.uk), Wellcome Sanger Institute
 
@@ -28,8 +29,84 @@ In this module we will address the effect of vector transmission on gene express
 
 ![](images/module5_image1.png)
 
-Figure 1. Serial blood passage increases virulence of malaria parasites. (A) The lifecycle of plasmodium parasites involves mammalian and mosquito stages. Experiments in the lab often exclude the mosquito stage (red) and instead remove parasites from the blood of a mouse to infect another mouse (serial blood passage). (B) Serially blood passaged parasites (red) are more virulent than mosquito-transmitted parasites (blue) as shown by their higher parasitemia over the course of infection. (C) As mosquito transmitted parasites are serially blood passaged an increasing number of times, they return to a higher level of parasitemia.
+**Figure 1. Serial blood passage increases virulence of malaria parasites.** (A) The lifecycle of plasmodium parasites involves mammalian and mosquito stages. Experiments in the lab often exclude the mosquito stage (red) and instead remove parasites from the blood of a mouse to infect another mouse (serial blood passage). (B) Serially blood passaged parasites (red) are more virulent than mosquito-transmitted parasites (blue) as shown by their higher parasitemia over the course of infection. (C) As mosquito transmitted parasites are serially blood passaged an increasing number of times, they return to a higher level of parasitemia.
 
+Figure 1C shows that increasing numbers of blood passages after mosquito transmission result in increasing virulence, back to around 20% parasitemia. Subsequent mosquito transmission of high virulence parasites renders them low virulence again. We hypothesise that parasites which have been through the mosquito are somehow better able to control the mosquito immune system than those which have not. This control of the immune system would result in lower parasitemia because this is advantageous for the parasite. Too high a parasitemia is bad for the mouse and therefore bad for the parasite. Are there any differences between the transcriptomes of serially blood passaged parasites and mosquito-transmitted parasites which might explain how they are able to do this? 
+
+ [↥ **Back to top**](#top)
+
+ ******
+## RNA-seq 1 Exercise 1 - Mapping RNA-seq reads to the genome using HISAT2 <a name="exercise1"></a>
+
+We have two conditions: serially blood-passaged parasites (SBP) and mosquito transmitted parasites (MT). One with three biological replicates (SBP), one with two (MT). Therefore we have five RNA samples, each which has been sequenced on an Illumina HiSeq sequencing machine. For this exercise we have reduced the number of reads in each sample to around 2.5m to reduce the mapping time. However this will be sufficient to detect most differentially expressed genes.
+
+Firstly, make a HISAT2 index for the P. chabaudi genome reference sequence.
+
+```shell
+# type the following into the terminal
+
+hisat2-build PccAS_v3_genome.fa PccAS_v3_hisat2idx
+```
+
+Map the reads for the MT1 sample using HISAT2. Each of the following steps will take a couple of minutes. 
+
+```shell
+# type the following into the terminal
+hisat2 --max-intronlen 10000 -x PccAS_v3_hisat2idx -1 MT1_1.fastq.gz -2 MT1_2.fastq.gz -S MT1.sam
+```
+
+Convert the SAM file to a BAM.
+
+```shell
+# type the following into the terminal
+samtools view -b -o MT1.bam MT1.sam
+```
+
+Sort the BAM file (otherwise the indexing won’t work)
+
+```shell
+# type the following into the terminal
+samtools sort -o MT1_sorted.bam MT1.bam
+```
+
+Index the BAM file so that it can be read efficiently by Artemis
+
+```shell
+# type the following into the terminal
+samtools index MT1_sorted.bam
+```
+
+Now map, convert SAM to BAM, sort and index with the reads from the MT2 sample.
+
+Note the BAM files and .bai index files provided for the SBP samples:
+
+```shell
+# type the following into the terminal
+ls *bam*
+```
+
+ [↥ **Back to top**](#top)
+
+ ******
+## RNA-seq 1 Exercise 2 - Using Artemis to visualise transcription <a name="exercise2"></a>
+
+Index the fasta file so Artemis can view each chromosome separately
+
+```shell
+# type the following into the terminal
+samtools faidx PccAS_v3_genome.fa
+```
+
+Load chromosome 14 into Artemis from the command line, displaying the mapped reads from each sample:
+
+```shell
+# type the following into the terminal
+art -Dbam="MT1_sorted.bam,MT2_sorted.bam,SBP1_sorted.bam,SBP2_sorted.bam,SBP3_sorted.bam" PccAS_v3_genome.fa +PccAS_v3.gff.gz &
+```
+
+Select ”Use index” so Artemis will show individual chromosomes.
+
+![](images/module5_image2.png)
 
 ******
 ## License
