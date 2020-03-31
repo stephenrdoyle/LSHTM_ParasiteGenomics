@@ -85,6 +85,29 @@ Note the BAM files and .bai index files provided for the SBP samples:
 ls *bam*
 ```
 
+ [↥ **Back to top**](#top)
+
+ ******
+## RNA-seq 1 Exercise 2 - Using Artemis to visualise transcription <a name="exercise2"></a>
+
+Index the fasta file so Artemis can view each chromosome separately
+
+```shell
+# type the following into the terminal
+samtools faidx PccAS_v3_genome.fa
+```
+
+Load chromosome 14 into Artemis from the command line, displaying the mapped reads from each sample:
+
+```shell
+# type the following into the terminal
+art -Dbam="MT1_sorted.bam,MT2_sorted.bam,SBP1_sorted.bam,SBP2_sorted.bam,SBP3_sorted.bam" PccAS_v3_genome.fa +PccAS_v3.gff.gz &
+```
+
+Select ”Use index” so Artemis will show individual chromosomes.
+
+![](images/module5_image2.png)
+
 ******
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
