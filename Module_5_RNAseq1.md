@@ -108,7 +108,7 @@ Select ”Use index” so Artemis will show individual chromosomes.
 
 ![](images/module5_image2.png)
 
-The Artemis and BAM view windows
+The Artemis and BAM view windows:
 
 1.	Drop-down menus
 2. Entry (top line): shows which entries are currently loaded with the default entry highlighted in yellow You can select different chromosomes to view here.
@@ -117,6 +117,18 @@ The Artemis and BAM view windows
 5. This panel has a similar layout to the main panel but is zoomed in to show nucleotides and amino acids. 
 6.	Sliders for zooming view panels.
 7.	Sliders for scrolling along the DNA.
+
+Right click on the BAM view, select *Graph, then *Coverage.
+
+Right click on the BAM window showing the reads and hover over BAM files. This will show you which colours in the coverage plot relate to which samples. Scroll through the chromosome and see if you can identify genes which might be differentially expressed between SBP and MT parasites. Is looking at the coverage plots alone a reliable way to assess differential expression? Hint: what is the difference between read count and RPKM? Are the libraries all the same size?
+
+![](images/module5_image3.png)
+
+Select chromosome PccAS_14_v3 from the drop down box on the Entry line.
+
+Press Ctrl-g and use “Goto Feature With Gene Name” to navigate to the gene PCHAS_1402500. 
+
+
 
 ******
 ## License
