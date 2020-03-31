@@ -3,12 +3,12 @@
 
 ## Table of contents
 1. [Introduction & Aims](#introduction)
-2. [RNAseq1 Exercise 1 - Mapping RNA-seq reads to the genome using HISAT2](#exercise1)
-3. [RNAseq1 Exercise 2 - Using Artemis to visualise transcription](#exercise2)
-4. [RNAseq1 Exercise 3 - Using Kallisto and Sleuth to identify differentially expressed genes](#exercise3)
-5. [RNAseq1 Exercise 4 - Using Sleuth to check the quality of the data](#exercise4)
-6. [RNAseq1 Exercise 5 - Interpreting the results](#exercise5)
-7. [RNAseq1 Extended reading](#reading)
+2. [Exercise 1 - Mapping RNA-seq reads to the genome using HISAT2](#exercise1)
+3. [Exercise 2 - Using Artemis to visualise transcription](#exercise2)
+4. [Exercise 3 - Using Kallisto and Sleuth to identify differentially expressed genes](#exercise3)
+5. [Exercise 4 - Using Sleuth to check the quality of the data](#exercise4)
+6. [Exercise 5 - Interpreting the results](#exercise5)
+7. [Extended reading](#reading)
 
 
 **Instructors**: [Adam Reid](mailto:ar11@sanger.ac.uk) & [Stephen Doyle](mailto:sd21@sanger.ac.uk), Wellcome Sanger Institute
@@ -36,7 +36,7 @@ Figure 1C shows that increasing numbers of blood passages after mosquito transmi
  [↥ **Back to top**](#top)
 
  ******
-## RNA-seq 1 Exercise 1 - Mapping RNA-seq reads to the genome using HISAT2 <a name="exercise1"></a>
+## Exercise 1 - Mapping RNA-seq reads to the genome using HISAT2 <a name="exercise1"></a>
 
 We have two conditions: serially blood-passaged parasites (SBP) and mosquito transmitted parasites (MT). One with three biological replicates (SBP), one with two (MT). Therefore we have five RNA samples, each which has been sequenced on an Illumina HiSeq sequencing machine. For this exercise we have reduced the number of reads in each sample to around 2.5m to reduce the mapping time. However this will be sufficient to detect most differentially expressed genes.
 
@@ -88,7 +88,7 @@ ls *bam*
  [↥ **Back to top**](#top)
 
  ******
-## RNA-seq 1 Exercise 2 - Using Artemis to visualise transcription <a name="exercise2"></a>
+## Exercise 2 - Using Artemis to visualise transcription <a name="exercise2"></a>
 
 Index the fasta file so Artemis can view each chromosome separately
 
@@ -146,7 +146,7 @@ This gene looks to be up-regulated in serially blood passaged parasites; SBP sam
  [↥ **Back to top**](#top)
 
  ******
-## RNA-seq 1 Exercise 3 - Using Kalliso and Sleuth to identify differentially expressed genes <a name="exercise3"></a>
+## Exercise 3 - Using Kalliso and Sleuth to identify differentially expressed genes <a name="exercise3"></a>
 
 *Kallisto* is a read mapper, but instead of mapping against the genome it is designed to map against the transcriptome, i.e. the spliced gene sequences inferred from the genome annotation. Rather than tell you where the reads map it’s aim is in quantifying the expression level of each transcript. It is very fast because it uses pseudoalignment rather than true read alignment. 
 
@@ -182,7 +182,7 @@ And then copy and paste all the commands from the file sleuth.R
  [↥ **Back to top**](#top)
 
  ******
-## RNA-seq 1 Exercise 4 - Using Sleuth to quality check the data <a name="exercise4"></a>
+## Exercise 4 - Using Sleuth to quality check the data <a name="exercise4"></a>
 
 *Sleuth* provides several tabs which we can use to determine whether the data is of good quality and whether we should trust the results we get.
 
@@ -201,7 +201,7 @@ In some cases we identify outliers, e.g. samples which do not agree with other r
  [↥ **Back to top**](#top)
 
  ******
-## RNA-seq 1 Exercise 5 - Interpreting the results <a name="exercise5"></a>
+## Exercise 5 - Interpreting the results <a name="exercise5"></a>
 
 In the R script we printed out a file of results describing the differentially expressed genes in our dataset. This is called “kallisto.results”.
 
@@ -256,7 +256,7 @@ If you want to read more about the work related to this data it is published: [S
  [↥ **Back to top**](#top)
 
  ******
-## RNA-seq 1 Extended reading <a name="reading"></a>
+## Extended reading <a name="reading"></a>
 
 Key aspects of differential expression analysis
 
@@ -271,7 +271,7 @@ When asking whether a gene is differentially expressed we use statistical tests 
 ### Alternative software
 If you have a good quality genome and genome annotation such as for model organisms e.g. human, mouse, Plasmodium, I would recommend mapping to the transcriptome for determining transcript abundance. This is even more relevant if you have variant transcripts per gene as you need a tool which will do its best to determine which transcript is really expressed. As well as Kallisto ([Bray et al., 2016](https://www.ncbi.nlm.nih.gov/pubmed/27043002)), there is eXpress ([Roberts & Pachter, 2012](https://www.ncbi.nlm.nih.gov/pubmed/23160280)) which will do this.
 
-Alternatively you can map to the genome and then call abundance of genes, essentially ignoring variant transcripts. This is more appropriate where you are less confident about the genome annotation and/or you don’t have variant transcripts because your organism rarely makes them or they are simply not annotated. HISAT2 ([Pertea et al., 2016](https://www.ncbi.nlm.nih.gov/pubmed/27560171)) STAR ({Dobin et al., 2013](https://www.ncbi.nlm.nih.gov/pubmed/23104886)) and GSNAP ([Wu & Nacu, 2010](https://www.ncbi.nlm.nih.gov/pubmed/20147302)) are all splice-aware RNA-seq read mappers appropriate for this task. You then need to use a tool which counts the reads overlapping each gene model. HTSeq ([Anders et al., 2015](https://www.ncbi.nlm.nih.gov/pubmed/25260700)) is a popular tool for this purpose. Cufflinks ([Trapnell et al. 2012](https://www.ncbi.nlm.nih.gov/pubmed/22383036)) will count reads and determine differentially expressed genes.
+Alternatively you can map to the genome and then call abundance of genes, essentially ignoring variant transcripts. This is more appropriate where you are less confident about the genome annotation and/or you don’t have variant transcripts because your organism rarely makes them or they are simply not annotated. HISAT2 ([Pertea et al., 2016](https://www.ncbi.nlm.nih.gov/pubmed/27560171)) STAR ([Dobin et al., 2013](https://www.ncbi.nlm.nih.gov/pubmed/23104886)) and GSNAP ([Wu & Nacu, 2010](https://www.ncbi.nlm.nih.gov/pubmed/20147302)) are all splice-aware RNA-seq read mappers appropriate for this task. You then need to use a tool which counts the reads overlapping each gene model. HTSeq ([Anders et al., 2015](https://www.ncbi.nlm.nih.gov/pubmed/25260700)) is a popular tool for this purpose. Cufflinks ([Trapnell et al. 2012](https://www.ncbi.nlm.nih.gov/pubmed/22383036)) will count reads and determine differentially expressed genes.
 
 There are a variety of programs for detecting differentially expressed genes from tables of RNA-seq read counts. DESeq2 ([Love et al., 2014](https://www.ncbi.nlm.nih.gov/pubmed/25516281)) and EdgeR ([Robinson et al., 2010](https://www.ncbi.nlm.nih.gov/pubmed/19910308)) are good examples.
 
