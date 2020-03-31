@@ -26,6 +26,10 @@ The aim of differential expression analysis is to determine which genes are more
 
 In this module we will address the effect of vector transmission on gene expression of the malaria parasite. Figure 1A shows the malaria life cycle, the red part highlighting the mosquito stage. Figure 1B shows the difference in virulence, measured by blood parasitemia, between mosquito-transmitted and serially blood passaged parasites. Is the transcriptome of a mosquito-transmitted parasite different from one which has not passed through a mosquito? The key reason for asking this question is that parasites which are transmitted by mosquito are less virulent in mice than those which are serially blood passaged in the laboratory. While mosquito transmitted and serially blood passaged parasites have exactly the same set of genes, perhaps they are using those genes differently. The data in this exercise, as well as figures 1B and 1C are taken from [Spence et al. (2013).](https://www.ncbi.nlm.nih.gov/pubmed/23719378)
 
+![](images/module5_image1.png)
+
+Figure 1. Serial blood passage increases virulence of malaria parasites. (A) The lifecycle of plasmodium parasites involves mammalian and mosquito stages. Experiments in the lab often exclude the mosquito stage (red) and instead remove parasites from the blood of a mouse to infect another mouse (serial blood passage). (B) Serially blood passaged parasites (red) are more virulent than mosquito-transmitted parasites (blue) as shown by their higher parasitemia over the course of infection. (C) As mosquito transmitted parasites are serially blood passaged an increasing number of times, they return to a higher level of parasitemia.
+
 
 ******
 ## License
