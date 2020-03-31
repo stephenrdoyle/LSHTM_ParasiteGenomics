@@ -108,11 +108,13 @@ Select ”Use index” so Artemis will show individual chromosomes.
 
 ![](images/module5_image2.png)
 
+The Artemis and BAM view windows
+
 1.	Drop-down menus
-2.  Entry (top line): shows which entries are currently loaded with the default entry highlighted in yellow You can select different chromosomes to view here.
+2. Entry (top line): shows which entries are currently loaded with the default entry highlighted in yellow You can select different chromosomes to view here.
 3.	BAM view: Displays reads mapped to the genome sequence. Each little horizontal line represents a sequencing read. Some reads are blue indicating that they are unique reads. Green reads represent multiple reads mapped to exactly the same position on the reference sequence. Grey lines in the middle of reads mean that the read has been split and this usually means it maps over an intron. If you click a read its mate pair will also be selected. If you want to know more about a read right-click and select ‘Show details of: READ NAME’.
-Sequence view panel. The central two grey lines represent the forward (top) and reverse (bottom) DNA strands. Above and below these are the three forward and three reverse reading frames (theoretical translations of the genome). Stop codons are marked as black vertical bars. Genes and other annotated features are displayed as coloured boxes. We often refer to predicted genes as coding sequences or CDSs.
-This panel has a similar layout to the main panel but is zoomed in to show nucleotides and amino acids. 
+4. Sequence view panel. The central two grey lines represent the forward (top) and reverse (bottom) DNA strands. Above and below these are the three forward and three reverse reading frames (theoretical translations of the genome). Stop codons are marked as black vertical bars. Genes and other annotated features are displayed as coloured boxes. We often refer to predicted genes as coding sequences or CDSs.
+5. This panel has a similar layout to the main panel but is zoomed in to show nucleotides and amino acids. 
 6.	Sliders for zooming view panels.
 7.	Sliders for scrolling along the DNA.
 
