@@ -27,9 +27,11 @@ samtools faidx PccAS_v3_genome.fa
 ## Exercise 3
 kallisto index -i PccAS_v3_kallisto PccAS_v3_transcripts.fa
 
-for (x in MT1 MT2 SBP1 SBP2 SBP3){
-kallisto quant -i PccAS_v3_kallisto -o $x -b 100 $x\_1.fastq.gz $x\_2.fastq.gz
-}
+for x in MT1 MT2 SBP1 SBP2 SBP3; do
+
+  kallisto quant -i PccAS_v3_kallisto -o $x -b 100 $x\_1.fastq.gz $x\_2.fastq.gz
+
+done
 
 # N.b. interactive command
 # R
