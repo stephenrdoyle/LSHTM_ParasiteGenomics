@@ -28,6 +28,19 @@ Sequencing reads as well as the reference sequence are available in the data dir
 
  [↥ **Back to top**](#top)
  
+ 
+  ******
+## Exercise - How does knockout of the transcription factor *ap2-g* affect gene expression in *Plasmodium*? <a name="exercise1"></a>
+ 
+###Summary
+
+To achieve this goal you should:
+1. Map the RNA-seq data to the reference
+2. Confirm the knockout in the mutant samples
+3. Call differentially expressed genes
+4. Perform a Gene Ontology enrichment analysis (we have provided an R script to help with this)
+
+ [↥ **Back to top**](#top)
 
 **Instructors**: [Adam Reid](mailto:ar11@sanger.ac.uk) & [Stephen Doyle](mailto:sd21@sanger.ac.uk), Wellcome Sanger Institute
 
