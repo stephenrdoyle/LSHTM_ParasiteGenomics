@@ -7,7 +7,7 @@
 
 Plasmodium berghei is used as a rodent model of malaria. It is known that in the lab it can evolve to stop producing sexual stages (Figure 1). We want to try and use this observation to our advantage. If we can understand how the parasite switches to the sexual, transmissible stage, then we might better understand how to prevent this from happening and prevent the spread of malaria. 
 
-## 1. Introduction <a name="introduction"></a>
+## Introduction <a name="introduction"></a>
 
 *Plasmodium berghei* is used as a rodent model of malaria. It is known that in the lab it can evolve to stop producing sexual stages (Figure 1). We want to try and use this observation to our advantage. If we can understand how the parasite switches to the sexual, transmissible stage, then we might better understand how to prevent this from happening and prevent the spread of malaria. 
 
@@ -32,9 +32,10 @@ Sequencing reads as well as the reference sequence are available in the data dir
   ******
 ## Exercise - How does knockout of the transcription factor *ap2-g* affect gene expression in *Plasmodium*? <a name="exercise1"></a>
  
-###Summary
+For this exercise, we will not tell you exactly which commands to use, but you will only need to use variations on those used in previous exercises. The exception to this rule is running the Gene Ontology enrichment.
 
-To achieve this goal you should:
+To complete the exercise you should:
+
 1. Map the RNA-seq data to the reference
 2. Confirm the knockout in the mutant samples
 3. Call differentially expressed genes
