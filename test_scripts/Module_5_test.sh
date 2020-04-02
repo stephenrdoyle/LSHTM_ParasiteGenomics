@@ -3,17 +3,18 @@
 hisat2-build PccAS_v3_genome.fa PccAS_v3_hisat2idx
 
 
-for (x in MT1 MT2){
+for x in MT1 MT2; do
 
-#hisat2 --max-intronlen 10000 -x PccAS_v3_hisat2idx -1 MT1_1.fastq.gz -2 MT1_2.fastq.gz -S MT1.sam
-hisat2 --max-intronlen 10000 -x PccAS_v3_hisat2idx -1 $x\_1.fastq -2 $x\_2.fastq -S $x\.sam
+  #hisat2 --max-intronlen 10000 -x PccAS_v3_hisat2idx -1 MT1_1.fastq.gz -2 MT1_2.fastq.gz -S MT1.sam
+  hisat2 --max-intronlen 10000 -x PccAS_v3_hisat2idx -1 $x\_1.fastq -2 $x\_2.fastq -S $x\.sam
 
-samtools view -b -o $x\.bam $x\.sam
+  samtools view -b -o $x\.bam $x\.sam
 
-samtools sort -o $x\_sorted.bam $x\.bam
+  samtools sort -o $x\_sorted.bam $x\.bam
 
-samtools index $x\_sorted.bam
-}
+  samtools index $x\_sorted.bam
+
+done
 
 ls *bam*
 
