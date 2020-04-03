@@ -221,14 +221,14 @@ With a little Linux magic we can get the list of differentially expressed genes 
 
 ```shell
 # type the following into the terminal
-cut -f1,3,4,12 kallisto.results | awk ‘$2 < 0.01 && $3 > 0’
+cut -f1,3,4,12 kallisto.results | awk '$2 < 0.01 && $3 > 0'
 ```
 
 These genes are more highly expressed in MT samples:
 
 ```shell
 # type the following into the terminal
-cut -f1,3,4,12 kallisto.results | awk ‘$2 < 0.01 && $3 < 0’
+cut -f1,3,4,12 kallisto.results | awk '$2 < 0.01 && $3 < 0'
 ```
 
 How many genes are more highly expressed in each condition?
