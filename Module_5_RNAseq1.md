@@ -250,7 +250,7 @@ Although this gene looked like it was differentially expressed from the plots in
 
 In this case, the lower number of reads mapping to MT samples mislead us in the Artemis view. Luckily careful normalisation and appropriate use of statistics saved the day!
 
-If you want to read more about the work related to this data it is published: [Spence et al. (2013).](https://www.ncbi.nlm.nih.gov/pubmed/23719378).
+If you want to read more about the work related to this data it is published: [Spence et al. (2013)](https://www.ncbi.nlm.nih.gov/pubmed/23719378).
 
 
  [↥ **Back to top**](#top)
