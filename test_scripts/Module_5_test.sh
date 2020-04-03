@@ -29,7 +29,8 @@ kallisto index -i PccAS_v3_kallisto PccAS_v3_transcripts.fa
 
 for x in MT1 MT2 SBP1 SBP2 SBP3; do
 
-  kallisto quant -i PccAS_v3_kallisto -o $x -b 100 $x\_1.fastq.gz $x\_2.fastq.gz
+  #kallisto quant -i PccAS_v3_kallisto -o $x -b 100 $x\_1.fastq.gz $x\_2.fastq.gz
+  kallisto quant -i PccAS_v3_kallisto -o $x -b 100 $x\_1.fastq $x\_2.fastq
 
 done
 
