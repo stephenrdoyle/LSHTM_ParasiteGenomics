@@ -182,7 +182,7 @@ And then copy and paste all the commands from the file sleuth.R
  [↥ **Back to top**](#top)
 
  ******
-## Exercise 4 - Using Sleuth to quality check the data <a name="exercise4"></a>
+## Exercise 4 - Using Sleuth to check the quality of the data <a name="exercise4"></a>
 
 *Sleuth* provides several tabs which we can use to determine whether the data is of good quality and whether we should trust the results we get.
 
