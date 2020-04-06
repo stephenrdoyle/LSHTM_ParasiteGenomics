@@ -104,6 +104,11 @@ Kraken works by aligning kmers from your DNA sequence against known kmer frequen
 
 cd /home/manager/Module_4_Assembly/step_1  
 
+# unzip your fastq read files
+
+gunzip *.gz
+
+#--- this will take a few moments, so just wait. As a hint, the "*" is a wildcard. Used here, it allows the unzip of any files in this directory that end with the ".gz". Wildcards save you some time, as you dont have to run the command twice for both files.
 
 # run FastQC for read 1 and read 2
 
@@ -112,7 +117,7 @@ fastqc SM_V7_chr4_illumina_R1.fq
 fastqc SM_V7_chr4_illumina_R2.fq
 
 
-# Once FastQC has finished running, run MultiQC and visualise output in web browser
+# Once FastQC has finished running for both rad files, run MultiQC and visualise output in web browser
 
 multiqc .
 
@@ -121,7 +126,9 @@ firefox multiqc_report.html
 
 # Once you have finished exploring FastQC/MultiQC, open the kraken report to determine the proportion of the read data that is “unclassified”.
 
-cat kraken.report
+head -n 100 kraken.report
+
+#--- "head" is used to look at the top of the file, and "-n 100" selects the top 100 lines. You want to look at the very top of this output.
 ```
 
 ***The kraken report***  
@@ -239,27 +246,28 @@ cd /home/manager/Module_4_Assembly/step_3
 
 # run the Miniasm assembly
 
-minimap2 -x ava-pb –t6 SM_V7_chr4_subreads.fa SM_V7_chr4_subreads.fa > SM_V7_chr4.minimap.paf
+minimap2 -x ava-pb –t6 SM_V7_chr4_subreads.fa.gz SM_V7_chr4_subreads.fa.gz > SM_V7_chr4.minimap.paf
+# - this first step will take some time.
 
-miniasm -f SM_V7_chr4_subreads.fa SM_V7_chr4.minimap.paf > SM_V7_chr4.miniasm.gfa
+miniasm -f SM_V7_chr4_subreads.fa.gz SM_V7_chr4.minimap.paf > SM_V7_chr4.miniasm.gfa
 
 cat SM_V7_chr4.miniasm.gfa | awk '$1=="S" { print ">"$2"\n"$3}'  > MINIASM_SM_V7_chr4.contigs.fasta
 
-#--- run time: step1 ~ 20 mins, 20 Gb RAM, 4 threads, steps2 and 3 are quick (< 1 min)
+#--- run time: step1 ~ 20 mins, 20 Gb RAM, 6 threads, steps2 and 3 are quick (< 1 min)
 
 
+# NOTE - the commands below have been provided for your reference (particularly to compare the run times), you do not need to run them
 # run the Canu assembly
-
-canu genomeSize=43M -pacbio-raw SM_V7_chr4_subreads.fa –d PB_SM_V7_chr4 -p PB_SM_V7_chr4
-java=/software/jdk1.8.0_74/bin/java
-
+#
+# canu genomeSize=43M -pacbio-raw SM_V7_chr4_subreads.fa –d PB_SM_V7_chr4 -p PB_SM_V7_chr4 java=/software/jdk1.8.0_74/bin/java
+#
 #--- run time: ~ 6h, 30 Gb RAM, 4 threads
-
-
+#
+#
 # run the Spades assembly
-
-dipspades.py -o SPADES_SM_chr4 -1 SM_V7_chr4_illumina_R1.fq -2 SM_V7_chr4_illumina_R2.fq --threads 4
-
+#
+# dipspades.py -o SPADES_SM_chr4 -1 SM_V7_chr4_illumina_R1.fq -2 SM_V7_chr4_illumina_R2.fq --threads 4
+#
 #--- run time: ~ 50h, 6 Gb RAM, 4 threads
 ```
 
