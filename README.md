@@ -11,10 +11,10 @@ Teaching materials for the London School of Hygiene and Tropical Medicine Parasi
 - Friday 24th April
      - 9.30-12.30: Module 3 - Comparative genomics
      - 14.00-17.00: Module 4 - Genome assembly
-- Thursday 14th May
-     - 9.30-12.30: Module 5 - RNAseq (1)
+- Wednesday 29th April
+     - 14.00-17.00: Module 5 - RNAseq (1)
+- Thursday 30th April
      - 14.00-17.00: Module 6 - RNAseq (2)
-
 
 
 ### Course manual
