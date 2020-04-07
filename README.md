@@ -4,6 +4,19 @@ Teaching materials for the London School of Hygiene and Tropical Medicine Parasi
 
 **Instructors**: [Adam Reid](mailto:ar11@sanger.ac.uk) & [Stephen Doyle](mailto:sd21@sanger.ac.uk), Wellcome Sanger Institute
 
+### Timetable
+- Thursday 23rd April
+     - 9.30-12.30: Module 1 - Artemis
+     - 14.00-17.00: Module 2 - Short read mapping
+- Friday 24th April
+     - 9.30-12.30: Module 3 - Comparative genomics
+     - 14.00-17.00: Module 4 - Genome assembly
+- Thursday 14th May
+     - 9.30-12.30: Module 5 - RNAseq (1)
+     - 14.00-17.00: Module 6 - RNAseq (2)
+
+
+
 ### Course manual
 1. Module 1 - Artemis
      - [Introductory presentation]()
