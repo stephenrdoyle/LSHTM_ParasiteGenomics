@@ -39,7 +39,7 @@ Teaching materials for the London School of Hygiene and Tropical Medicine Parasi
      - [Manual PDF version]()
 
 5. Module 5 - RNAseq(1)
-     - [Introductory presentation]()
+     - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_RNAseq.pdf)
      - [Online manual](Module_5_RNAseq1.md)
      - [Manual PDF version]()
 
