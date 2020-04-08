@@ -21,32 +21,32 @@ Teaching materials for the London School of Hygiene and Tropical Medicine Parasi
 1. Module 1 - Artemis
      - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_Module1_Artemis.pdf)
      - [Online manual](Module_1_Artemis.md)
-     - [Manual PDF version]()
+     - [Manual PDF version](Module_1_Artemis.pdf)
 
 2. Module 2 - Short Read mapping
      - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_Module2_Short_read_mapping.pdf)
      - [Online manual](Module_2_Mapping_Short_Reads.md)
-     - [Manual PDF version]()
+     - [Manual PDF version](Module_2_Mapping_Short_Reads.pdf)
 
 3. Module 3 - Comparative Genomics
      - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_Module3_ComparativeGenomics.pdf)
      - [Online manual](Module_3_Comparative_Genomics.md)
-     - [Manual PDF version]()
+     - [Manual PDF version](Module_3_Comparative_Genomics.pdf)
 
 4. Module 4 - Genome Assembly
      - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_Module4_DeNovoAssembly.pdf)
      - [Online manual](Module_4_Genome_Assembly.md)
-     - [Manual PDF version]()
+     - [Manual PDF version](Module_4_Genome_Assembly.pdf)
 
 5. Module 5 - RNAseq(1)
      - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_RNAseq.pdf)
      - [Online manual](Module_5_RNAseq1.md)
-     - [Manual PDF version]()
+     - [Manual PDF version](Module_5_RNAseq1.pdf)
 
 6. Module 6 - RNAseq(2)
      - [Introductory presentation]()
-     - [Online manual]()
-     - [Manual PDF version]()
+     - [Online manual](Module_5_RNAseq1.md)
+     - [Manual PDF version](Module_5_RNAseq1.pdf)
 
 7. Appendix
      - [Manual](presentations/LSHTM_Appendix.pdf)
