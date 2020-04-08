@@ -24,7 +24,7 @@ Teaching materials for the London School of Hygiene and Tropical Medicine Parasi
      - [Manual PDF version]()
 
 2. Module 2 - Short Read mapping
-     - [Introductory presentation]()
+     - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_Module2_Short_read_mapping.pptx)
      - [Online manual](Module_2_Mapping_Short_Reads.md)
      - [Manual PDF version]()
 
