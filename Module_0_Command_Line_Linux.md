@@ -96,7 +96,7 @@ Commands in BLACK need to be run. Commands in RED do not need to be run – they
 
 Open a terminal by clicking on this icon:
 
-![Terminal logo](https://github.com/stephenrdoyle/LSHTM_ParasiteGenomics_2020/images/terminal-icon.png)
+![Terminal logo](https://github.com/stephenrdoyle/LSHTM_ParasiteGenomics_2020/blob/master/images/terminal-icon.png)
 
 your first commands – make a new directory and move into it to get started!
 
