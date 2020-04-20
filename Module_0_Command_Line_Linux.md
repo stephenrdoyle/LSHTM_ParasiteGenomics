@@ -59,22 +59,22 @@ We've also included a cheat sheet. It probably won't make a lot of sense now, bu
 
 |Command|What it does|
 |-------|------------|
-|ls|Lists the contents of the current directory|
-|mkdir|Makes a new directory|
-|mv|Moves or renames a file|
-|cp|Copies a file|
-|rm|Removes a file|
-|cat|Concatenates files|
-|less|Displays the contents of a file one page at a time|
-|head|Displays the first ten lines of a file|
-|tail|Displays the last ten lines of a file|
-|cd|Changes current working directory|
-|pwd|Prints working directory|
-|find|Finds files matching an expression|
-|grep|Searches a file for patterns|
-|wc|Counts the lines, words, characters, and bytes in a file|
-|kill|Stops a process|
-|jobs|Lists the processes that are running|
+|```ls```|Lists the contents of the current directory|
+|```mkdir```|Makes a new directory|
+|```mv```|Moves or renames a file|
+|```cp```|Copies a file|
+|```rm```|Removes a file|
+|```cat```|Concatenates files|
+|```less```|Displays the contents of a file one page at a time|
+|```head```|Displays the first ten lines of a file|
+|```tail```|Displays the last ten lines of a file|
+|```cd```|Changes current working directory|
+|```pwd```|Prints working directory|
+|```find```|Finds files matching an expression|
+|```grep```|Searches a file for patterns|
+|```wc```|Counts the lines, words, characters, and bytes in a file|
+|```kill```|Stops a process|
+|```jobs```|Lists the processes that are running|
 
 
 ******
