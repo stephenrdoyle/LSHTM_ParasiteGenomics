@@ -2,7 +2,7 @@
 
 
 ## Table of contents
-1. [Introduction & Aims](#introduction)
+1. [Introducing Linux](#introduction)
 2. [Artemis Exercise 1](#exercise1)
 3. [Artemis Exercise 2](#exercise2)
 4. [Artemis Exercise 3](#exercise3)
@@ -12,12 +12,7 @@
 **Instructors**: [Adam Reid](mailto:ar11@sanger.ac.uk) & [Stephen Doyle](mailto:sd21@sanger.ac.uk), Wellcome Sanger Institute
 
 
-
-
-
-## 1. Overview and aims <a name="introduction"></a>
-
-# Introducing Linux
+# 1. Introducing Linux <a name="introduction"></a>
 
 Linux is the standard operating system on most large computer systems in scientific research, in the same way that Microsoft Windows is the dominant operating system on desktop PCs.
 
@@ -27,27 +22,21 @@ Linux is a powerful, secure, robust and stable operating system which allows doz
 
 Why Linux?
 
-Increasingly, the output of biological research exists as in silico data, usually in the form of large text files. Linux is particularly suitable for working with such files and has several powerful and flexible commands that can be used to process and analyse this data. One advantage of learning Linux is that many of the commands can be combined in an almost unlimited fashion. So if you can learn just six Linux commands, you will be able to do a lot more than just six things.
+Increasingly, the output of biological research exists as *in silico* data, usually in the form of large text files. Linux is particularly suitable for working with such files and has several powerful and flexible commands that can be used to process and analyse this data. One advantage of learning Linux is that many of the commands can be combined in an almost unlimited fashion. So if you can learn just six Linux commands, you will be able to do a lot more than just six things.
 
 Linux contains hundreds of commands, but to conduct your analysis you will probably only need 10 or so to achieve most of what you want to do. In this course we will introduce you to some basic Linux commands followed by some more advanced commands and provide examples of how they can be used in bioinformatics analyses.
 
-Sections of the Linux module
-1. Basic Linux
-2. Files
-3. loops and bash scripts
-4. grep
-5. awk
+## General Points
 
-General Points
 Linux is pretty straightforward, but there are some general points to remember that will make your life easier:
 Linux is case sensitive - typing "ls" is not the same as typing "LS".
-You need to put a space between a command and its argument - for example, "more myfile" will show you the contents of the file called myfile; "moremyfile" will just give you an error!
+You need to put a space between a command and its argument - for example, "more myfile" will show you the contents of the file called *myfile*; "moremyfile" will just give you an error!
 Linux is not psychic! If you misspell the name of a command or the name of a file, it will not understand you.
 Many of the commands are only a few letters long; this can be confusing until you start to think logically about why those letters were chosen - ls for list, rm for remove and so on.
 Often when you have problems with Linux, it is due to a spelling mistake, or perhaps you have omitted a space.
 If you want to know more about Linux and its commands there are plenty of resources available that provide a more comprehensive guide (including a cheat sheet at the end of this chapter):- 
- http://Linuxhelp.ed.ac.uk 
- http://Linux.t-a-y-l-o-r.com/
+[Linux Command .org](http://linuxcommand.org/)
+[Linux teaching at University of Surrey](http://www.ee.surrey.ac.uk/Teaching/Unix/)
 
 
 Following the course in a terminal
