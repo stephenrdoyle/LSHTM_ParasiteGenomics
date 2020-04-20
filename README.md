@@ -16,6 +16,13 @@ Teaching materials for the London School of Hygiene and Tropical Medicine Parasi
 - Thursday 30th April
      - 14.00-17.00: Module 6 - RNAseq (2)
 
+### Pre-course information
+This course aims to give you experience in using software to analyse genomic DNA to address biological questions. The software will include downloadable graphical user interface (GUI), web-based, and UNIX-based command line tools. Using the command line can and will be very new and foreign to many of you, and much like learning any new language, will take time and practice to master. To get you started, we **highly recommend** you attempt the *Introduction to Shell* tutorial available at DataCamp, which you can access using the link below. You will need to sign up for an account, however, this tutorial is free. There are many other tutorials, some are free and some require a subscription, that may help you with difference aspects of data analysis, so please do check them out.
+
+[DataCamp - Introduction to Shell](https://www.datacamp.com/courses/introduction-to-shell)
+
+
+
 
 ### Course manual
 1. Module 1 - Artemis
