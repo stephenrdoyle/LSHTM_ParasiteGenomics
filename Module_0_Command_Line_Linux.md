@@ -34,18 +34,14 @@ You need to put a space between a command and its argument - for example, "more 
 Linux is not psychic! If you misspell the name of a command or the name of a file, it will not understand you.
 Many of the commands are only a few letters long; this can be confusing until you start to think logically about why those letters were chosen - ls for list, rm for remove and so on.
 Often when you have problems with Linux, it is due to a spelling mistake, or perhaps you have omitted a space.
-If you want to know more about Linux and its commands there are plenty of resources available that provide a more comprehensive guide (including a cheat sheet at the end of this chapter):- 
+If you want to know more about Linux and its commands there are plenty of resources available that provide a more comprehensive guide (including a cheat sheet at the end of this chapter):
+
 [Linux Command .org](http://linuxcommand.org/)
+
 [Linux teaching at University of Surrey](http://www.ee.surrey.ac.uk/Teaching/Unix/)
 
-
-Following the course in a terminal
-In this course you will use a terminal window to type in your Linux commands. This is similar to the "Command Prompt" window on MS Windows systems, which allows the user to type DOS commands to manage files.
-
-Cheat sheet
+## Cheat sheet
 We've also included a cheat sheet. It probably won't make a lot of sense now, but it might be a useful reminder of this module later in the course.
-
-## Some useful Linux commands
 
 |Command|What it does|
 |-------|------------|
@@ -68,20 +64,19 @@ We've also included a cheat sheet. It probably won't make a lot of sense now, bu
 
 ## Tips to get you started
 
-* Read the text! They contain lots of hints that should help you to answer some of the questions
-* Grey boxes contain instructions for running commands
+Grey boxes contain commands that you need to run e.g.
 
-```# run FastQC for read 1 and read 2```
-```$ fastqc SM_V7_chr4_illumina_R1.fq```
-```$ fastqc SM_V7_chr4_illumina_R2.fq```
+```
+# run FastQC for read 1 and read 2
+$ fastqc SM_V7_chr4_illumina_R1.fq
+$ fastqc SM_V7_chr4_illumina_R2.fq
+```
 
 A line stating with a “#” and is blue is an instruction – it does not need to be typed
 
 A line stating with a “$” is a command and needs to be typed into the command line to run. Each line that begins with a $ represents a new command
 
-Commands in BLACK need to be run. Commands in RED do not need to be run – they have been run for you to save time.
-
-In this workshop, we will be using Ubuntu, a version of Linux which was specially designed for PCs.
+# The command line
 
 We will use a terminal window to type in our Linux command line. This is similar to the "Command Prompt" window on MS Windows systems, which allows the user to type DOS commands to manage files.
 
@@ -89,47 +84,27 @@ You should see a window labelled "Terminal" which will be empty except for a ’
 
 You can type commands directly into the terminal at the ‘$' prompt.
 
-A list of useful commands can be found on a previous page.
-Many of them are two- or three-letter abbreviations. The earliest Linux systems (circa 1970) only had slow Teletype terminals, so it was faster to type 'rm' to remove a file than 'delete' or 'erase'. This terseness is a feature of Linux which still survives.
+All Linux programs may be run by typing commands at the Linux prompt $. The command line tells the computer what to do.
+You may subtly alter these commands by specifying certain options when typing in the command line.
 
+### Command line Arguments
+Typing any Linux command for example ls, mv or cd at the Linux prompt with the appropriate variables such as files names or directories will result in the tasks being performed on pressing the enter key.
+
+		command   options   arguments
+
+The ‘command’ is separated from the options and arguments by a space.  
+
+Additional options and/or arguments can be added to the commands to affect the way the command works. 
+
+Options usually have one dash and a letter (e.g. -h) or two dashes and a word (--help) with no space between the dash and the letter/word. 
+
+Arguments are often filenames or directories.
 
 # Lets get started!
 
 Open a terminal by clicking on this icon:
 
 ![Terminal logo](https://github.com/stephenrdoyle/LSHTM_ParasiteGenomics_2020/blob/master/images/terminal-icon.png)
-
-your first commands – make a new directory and move into it to get started!
-
-```mkdir Module_0_Linux```
-
-```cd /home/manager/Module_0_Linux```
-
-![Second command logo](https://github.com/stephenrdoyle/LSHTM_ParasiteGenomics_2020/blob/master/images/second_cmd.png)
-
-In this workshop, we will be using Ubuntu, a version of Linux which was specially designed for PCs.
-
-We will use a terminal window to type in our Linux command line. This is similar to the "Command Prompt" window on MS Windows systems, which allows the user to type DOS commands to manage files.
-
-You should see a window labelled "Terminal" which will be empty except for a ’$' character at the top left. The '$' character is the Linux prompt, similar to "C:\" in DOS. Note: the prompt will often be different on different Linux computers, for example it may be displayed as a ‘%’ character.
-
-
-
-## The command line
-
-All Linux programs may be run by typing commands at the Linux prompt $. The command line tells the computer what to do.
-You may subtly alter these commands by specifying certain options when typing in the command line.
-
-Command line Arguments
-Typing any Linux command for example ls, mv or cd at the Linux prompt with the appropriate variables such as files names or directories will result in the tasks being performed on pressing the enter key.
-
-		command   options   arguments
-
-The ‘command’ is separated from the options and arguments by a space.  
-Additional options and/or arguments can be added to the commands to affect the way the command works. 
-Options usually have one dash and a letter (e.g. -h) or two dashes and a word (--help) with no space between the dash and the letter/word. 
- Arguments are usually filenames or directories.
-For example, the list (ls) command
 
 ```
 # List the contents of a directory
@@ -142,7 +117,7 @@ $ ls –l
 $ ls –al 	
 
 #List the contents of the directory called Module_3_Linux_Scripting with extra information
-$ ls –l Module_3_Linux_Scripting
+$ ls –l Module_1_Artemis
 
 # Suggested usage – this will be the most frequent command used as a bioinformatician!
 $ ls –ltr
