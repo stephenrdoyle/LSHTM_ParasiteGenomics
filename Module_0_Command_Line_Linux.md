@@ -56,6 +56,7 @@ In this course you will use a terminal window to type in your Linux commands. Th
 Cheat sheet
 We've also included a cheat sheet. It probably won't make a lot of sense now, but it might be a useful reminder of this module later in the course.
 
+## Some useful Linux commands
 
 |Command|What it does|
 |-------|------------|
@@ -75,6 +76,54 @@ We've also included a cheat sheet. It probably won't make a lot of sense now, bu
 |```wc```|Counts the lines, words, characters, and bytes in a file|
 |```kill```|Stops a process|
 |```jobs```|Lists the processes that are running|
+
+## Tips to get you started
+
+* Read the text! They contain lots of hints that should help you to answer some of the questions
+* Grey boxes contain instructions for running commands
+
+```# run FastQC for read 1 and read 2```
+```$ fastqc SM_V7_chr4_illumina_R1.fq```
+```$ fastqc SM_V7_chr4_illumina_R2.fq```
+
+A line stating with a “#” and is blue is an instruction – it does not need to be typed
+
+A line stating with a “$” is a command and needs to be typed into the command line to run. Each line that begins with a $ represents a new command
+
+Commands in BLACK need to be run. Commands in RED do not need to be run – they have been run for you to save time.
+
+# Lets get started!
+
+Open a terminal by clicking on this icon:
+
+![Terminal logo](https://github.com/stephenrdoyle/LSHTM_ParasiteGenomics_2020/images/terminal-icon.png)
+
+your first commands – make a new directory and move into it to get started!
+
+```mkdir Module_0_Linux```
+```cd /home/manager/Module_0_Linux```
+
+In this workshop, we will be using Ubuntu, a version of Linux which was specially designed for PCs.
+
+We will use a terminal window to type in our Linux command line. This is similar to the "Command Prompt" window on MS Windows systems, which allows the user to type DOS commands to manage files.
+
+You should see a window labelled "Terminal" which will be empty except for a ’$' character at the top left. The '$' character is the Linux prompt, similar to "C:\" in DOS. Note: the prompt will often be different on different Linux computers, for example it may be displayed as a ‘%’ character.
+
+
+
+
+
+
+
+
+
+
+
+You can type commands directly into the terminal at the ‘$' prompt.
+
+A list of useful commands can be found on a previous page.
+Many of them are two- or three-letter abbreviations. The earliest Linux systems (circa 1970) only had slow Teletype terminals, so it was faster to type 'rm' to remove a file than 'delete' or 'erase'. This terseness is a feature of Linux which still survives.
+
 
 
 ******
