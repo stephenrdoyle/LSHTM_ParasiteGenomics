@@ -27,7 +27,7 @@ You will need to sign up for an account, however, this tutorial is free. There a
 
 ### Course manual
 1. Module 1 - Artemis
-     - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_Module1_Artemis.pdf)
+     - [Introductory presentation](presentations/LSHTM2020_Talk_Introduction.pdf)
      - [Online manual](Module_1_Artemis.md)
      - [Manual PDF version](Module_1_Artemis.pdf)
 
