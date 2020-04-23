@@ -52,8 +52,7 @@ You will need to sign up for an account, however, this tutorial is free. There a
      - [Manual PDF version](Module_5_RNAseq1.pdf)
 
 6. Module 6 - RNAseq(2)
-     - [Introductory presentation]()
-     - [Online manual](Module_6_RNAseq2.md)
+     - [Introductory presentation & Online manual](Module_6_RNAseq2.md)
      - [Manual PDF version](Module_6_RNAseq2.pdf)
 
 7. Appendix
