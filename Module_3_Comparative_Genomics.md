@@ -79,7 +79,9 @@ You can optimise your image by either removing ‘low scoring’ (or percentage 
 ![](images/module3_image9.png)  
 
 ***Things to try out in ACT***  
-Load into the top sequence (*S. typhi*) a ‘.tab’ file called ‘laterally.tab.gz’. You will need to use the ‘File’ menu and select the correct genome sequence (‘S.typhi.dna.gz’) before you can read in an entry. If you are zoomed out and looking at the whole of both genomes you should see the above. The small white boxes are the regions of atypical DNA covering regions that we looked at in the first Artemis exercise. It is apparent that there is a backbone sequence shared with *E. coli* K12, plus chunks of *S. Typhi* specific DNA, which appear to be insertions relative to *E. coli* K12.   
+Load into the top sequence (*S. typhi*) a ‘.tab’ file called ‘laterally.tab.gz’. TO do this, use the ‘File’ menu, select the correct genome sequence (‘S.typhi.dna.gz’), and then "Read in an entry" before selecting the ‘laterally.tab.gz’ file.  
+
+If you are zoomed out and looking at the whole of both genomes you should see the above. The small white boxes are the regions of atypical DNA covering regions that we looked at in the first Artemis exercise. It is apparent that there is a backbone sequence shared with *E. coli* K12, plus chunks of *S. Typhi* specific DNA, which appear to be insertions relative to *E. coli* K12.   
 
 ***More things to try out in ACT***  
 1. Double click red boxes to centralise them.
