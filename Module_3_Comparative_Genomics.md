@@ -142,7 +142,7 @@ There are several computer algorithms, covered earlier in the course, that predi
 - Use ‘File’ menu to select entry ‘Pfal_chr13.embl.gz’ and select ‘Edit In Artemis’ to bring up an Artemis window.
 - In Artemis window, use ‘Graph’ menu and switch ‘on’ the ‘GC Content (%)’ window.
 - Use ‘Goto’ menu to select ‘Navigator’ window and within the Navigator window, select ‘Goto Feature With This Qualifier Value’ and type ‘PFM1010w’, click then close the dialogue box.
-- Go through the annotated gene model for ‘PFM1010w’ and have a look at the the exon-intron boundaries and compare with the splice site sequences from *P. falciparum* given in Appendix XI.
+- Go through the annotated gene model for ‘PFM1010w’ and have a look at the the exon-intron boundaries and compare with the splice site sequences from *P. falciparum* given in Appendix VIIII.
 - Also have a glance through a few other gene models for multi-exon genes and have a look at the intron sequences as well. Can you find any common pattern in the putative intron sequences?
      - Hint – look at the complexity of the sequence
 - You can delete exon(s) of any gene by selecting the exon(s) and then choosing ‘Delete Selected Exons’ from ‘Edit’ menu. Similarly, you can add an exon to a particular gene by co-selecting the exon and the gene (CDS features) followed by selecting ‘Merge Selected Features’ from the ‘Edit’ menu.
