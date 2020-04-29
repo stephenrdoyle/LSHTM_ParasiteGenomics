@@ -43,6 +43,10 @@ We have two conditions: serially blood-passaged parasites (SBP) and mosquito tra
 Firstly, make a HISAT2 index for the P. chabaudi genome reference sequence.
 
 ```shell
+# got to the working directory
+
+cd /home/manager/Module_5_RNAseq1/
+
 # type the following into the terminal
 
 hisat2-build PccAS_v3_genome.fa PccAS_v3_hisat2idx
