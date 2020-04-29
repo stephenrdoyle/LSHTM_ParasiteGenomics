@@ -82,7 +82,7 @@ Note the BAM files and .bai index files provided for the SBP samples:
 
 ```shell
 # type the following into the terminal
-ls *bam*
+ls -lrt *bam*
 ```
 
  [↥ **Back to top**](#top)
