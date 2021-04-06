@@ -1,20 +1,19 @@
-# LSHTM_ParasiteGenomics_2020
+# LSHTM_ParasiteGenomics_2021
 
-Teaching materials for the London School of Hygiene and Tropical Medicine Parasite Genomics modules for 2020.
+Teaching materials for the London School of Hygiene and Tropical Medicine Parasite Genomics modules for 2021.
 
 **Instructors**: [Adam Reid](mailto:ar11@sanger.ac.uk) & [Stephen Doyle](mailto:sd21@sanger.ac.uk), Wellcome Sanger Institute
 
 ### Timetable
-- Thursday 23rd April
-     - 9.30-12.30: Module 1 - Artemis
+- Thursday 22nd April
+     - 11:00-13:00: Module 1 - Artemis
      - 14.00-17.00: Module 2 - Short read mapping
-- Friday 24th April
-     - 9.30-12.30: Module 3 - Comparative genomics
-     - 14.00-17.00: Module 4 - Genome assembly
-- Wednesday 29th April
-     - 14.00-17.00: Module 5 - RNAseq (1)
-- Thursday 30th April
-     - 14.00-17.00: Module 6 - RNAseq (2)
+- Friday 23rd April
+     - 11:00-13:00: Module 3 - Comparative genomics
+     - 14.00-16:30: Module 4 - Long-read sequence assembly
+- Thursday 29th April
+     - 11:00-13:00: Module 5 - Transcriptomic analysis (1)
+     - 14.00-16:30: Module 6 - Transcriptomic analysis (2)
 
 ### Pre-course information
 This course aims to give you experience in using software to analyse genomic DNA to address biological questions. The software will include downloadable graphical user interface (GUI), web-based, and UNIX-based command line tools. Using the command line can and will be very new and foreign to many of you, and much like learning any new language, will take time and practice to master. To get you started, we **highly recommend** you attempt the *Introduction to Shell* tutorial available at DataCamp, which you can access using the link below. In doing so, you will have a significant advantage in the modules that require you to use the command line.  
