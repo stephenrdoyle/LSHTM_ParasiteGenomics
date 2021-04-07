@@ -231,7 +231,8 @@ One feature of all sequencing technologies is that sequence quality declines ove
 The process of error correction does take a substantial amount of time and compute resources. It has recently been demonstrated that the second error correction step can be sacrificed to significantly increase assembly speed and the cost of assembly base-level accuracy, i.e., it is uncorrected, and so the assembly error rate is similar to the read error rate. We will perform a raw Pacbio assembly using Minimap and Miniasm to compare with our other two assemblies.
 
 ***Tasks***
-- NORMALLY, we would get you to perfrom an assembly using MINIASM. However, it is somewhat time and memory intensive, and give we are all working from our home computers etc, we will skip this step. We have kept the block of code below so you can see how it is done, however, you do not need to run this code. 
+- **NORMALLY**, we would get you to perfrom an assembly using MINIASM. However, it is somewhat time and memory intensive, and given we are all working from our home computers etc, we will skip this step. 
+	- We have kept the block of code below so you can see how it is done, however, **you do not need to run this code**. 
 
 - We will still determine the assembly statistics of each genome assembly
 
