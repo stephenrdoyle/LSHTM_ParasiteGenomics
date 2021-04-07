@@ -23,7 +23,7 @@ You will need to sign up for an account, however, this tutorial is free. There a
 
 ### Introductory talks
 
-- [Module 3 & 4](https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=afa63dd7-01b8-433c-b37e-ad03015d384b) 
+- [Modules 3 & 4](https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=afa63dd7-01b8-433c-b37e-ad03015d384b) 
 
 
 ### Course manual
