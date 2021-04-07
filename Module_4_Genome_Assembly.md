@@ -231,27 +231,25 @@ One feature of all sequencing technologies is that sequence quality declines ove
 The process of error correction does take a substantial amount of time and compute resources. It has recently been demonstrated that the second error correction step can be sacrificed to significantly increase assembly speed and the cost of assembly base-level accuracy, i.e., it is uncorrected, and so the assembly error rate is similar to the read error rate. We will perform a raw Pacbio assembly using Minimap and Miniasm to compare with our other two assemblies.
 
 ***Tasks***
-- Run the Miniasm command to generate your first Pacbio assembly of Chromosome IV
+- **NORMALLY**, we would get you to perfrom an assembly using MINIASM. However, it is somewhat time and memory intensive, and given we are all working from our home computers etc, we will skip this step. 
+	- We have kept the block of code below so you can see how it is done, however, **you do not need to run this code**. 
 
-- The Canu and Spades assemblies have been provided for you
-     – it would take too long to run these here – however, we have provided the commands for your reference
-
-- Determine the assembly statistics of each genome assembly
+- We will still determine the assembly statistics of each genome assembly
 
 ```shell
 # go to the working directory
 
-cd /home/manager/Module_4_Assembly/step_3  
+# cd /home/manager/Module_4_Assembly/step_3  
 
 
 # run the Miniasm assembly
 
-minimap2 -x ava-pb –t6 SM_V7_chr4_subreads.fa.gz SM_V7_chr4_subreads.fa.gz > SM_V7_chr4.minimap.paf
+# minimap2 -x ava-pb –t6 SM_V7_chr4_subreads.fa.gz SM_V7_chr4_subreads.fa.gz > SM_V7_chr4.minimap.paf
 # - this first step will take some time.
 
-miniasm -f SM_V7_chr4_subreads.fa.gz SM_V7_chr4.minimap.paf > SM_V7_chr4.miniasm.gfa
+# miniasm -f SM_V7_chr4_subreads.fa.gz SM_V7_chr4.minimap.paf > SM_V7_chr4.miniasm.gfa
 
-cat SM_V7_chr4.miniasm.gfa | awk '$1=="S" { print ">"$2"\n"$3}'  > MINIASM_SM_V7_chr4.contigs.fasta
+# cat SM_V7_chr4.miniasm.gfa | awk '$1=="S" { print ">"$2"\n"$3}'  > MINIASM_SM_V7_chr4.contigs.fasta
 
 #--- run time: step1 ~ 20 mins, 20 Gb RAM, 6 threads, steps2 and 3 are quick (< 1 min)
 
