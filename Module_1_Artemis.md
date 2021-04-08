@@ -1,4 +1,4 @@
-# Module 1 - Artemis
+# Computer Practical 1: Viewing genome sequences
 
 
 ## Table of contents
