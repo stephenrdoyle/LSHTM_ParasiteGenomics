@@ -1,4 +1,5 @@
-# Module 2 - Mapping Short Reads
+# Computer Practical 2: Analysis of sequence variants
+
 
 **Instructors**: [Adam Reid](mailto:ar11@sanger.ac.uk) & [Stephen Doyle](mailto:sd21@sanger.ac.uk), Wellcome Sanger Institute
 
