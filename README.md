@@ -42,12 +42,10 @@ Video lectures are available as introductions to the material for each pair of p
      - [Manual PDF version](Module_2_Mapping_Short_Reads.pdf)
 
 3. Computer Practical 3: Comparative genomics
-     - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_Module3_ComparativeGenomics.pdf)
      - [Online manual](Module_3_Comparative_Genomics.md)
      - [Manual PDF version](Module_3_Comparative_Genomics.pdf)
 
 4. Computer Practical 4: Long-read sequence assembly
-     - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_Module4_DeNovoAssembly.pdf)
      - [Online manual](Module_4_Genome_Assembly.md)
      - [Manual PDF version](Module_4_Genome_Assembly.pdf)
 
