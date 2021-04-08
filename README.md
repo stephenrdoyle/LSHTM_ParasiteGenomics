@@ -31,6 +31,11 @@ Video lectures are available as introductions to the material for each pair of p
 
 - Practicals 5 & 6: [Video lecture](), [Slides](Presentations_2021/LSHTM2021_Talk_RNAseq.pdf)
 
+### Instructor lectures
+
+- [Comparative genomics of apicomplexans – with a focus on large gene families (Adam Reid)]()
+- [Comparative genomics of helminths (Stephen Doyle)]()
+
 ### Course manual
 
 1. Computer Practical 1: Viewing genome sequences
