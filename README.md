@@ -21,19 +21,26 @@ You will need to sign up for an account, however, this tutorial is free. There a
 
 [DataCamp - Introduction to Shell](https://www.datacamp.com/courses/introduction-to-shell)
 
-### Introductory talks
+Video lectures are available as introductions to the material for each pair of practicals 1-6
+
+### Introductory video lectures
+
+- [Modules 1 & 2]()
+- [Practicals 1 & 2 Introductory presentation](Presentations_2021/LSHTM2021_Talk_Introduction.pdf)
 
 - [Modules 3 & 4](https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=afa63dd7-01b8-433c-b37e-ad03015d384b) 
+- [Practicals 3 & 4 Introductory presentation]()
 
+- [Modules 5 & 6]()
+- [Practicals 5 & 6 Introductory presentation](Presentations_2021/LSHTM2021_Talk_RNAseq.pdf)
 
 ### Course manual
-1. Module 1 - Artemis
-     - [Introductory presentation](presentations/LSHTM2020_Talk_Introduction.pdf)
+
+1. Computer Practical 1: Viewing genome sequences
      - [Online manual](Module_1_Artemis.md)
      - [Manual PDF version](Module_1_Artemis.pdf)
-
-2. Module 2 - Short Read mapping
-     - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_Module2_Short_read_mapping.pdf)
+     
+2. Computer Practical 2: Analysis of sequence variants
      - [Online manual](Module_2_Mapping_Short_Reads.md)
      - [Manual PDF version](Module_2_Mapping_Short_Reads.pdf)
 
@@ -48,12 +55,11 @@ You will need to sign up for an account, however, this tutorial is free. There a
      - [Manual PDF version](Module_4_Genome_Assembly.pdf)
 
 5. Module 5 - RNAseq(1)
-     - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_RNAseq.pdf)
      - [Online manual](Module_5_RNAseq1.md)
      - [Manual PDF version](Module_5_RNAseq1.pdf)
 
 6. Module 6 - RNAseq(2)
-     - [Introductory presentation & Online manual](Module_6_RNAseq2.md)
+     - [Online manual](Module_6_RNAseq2.md)
      - [Manual PDF version](Module_6_RNAseq2.pdf)
 
 7. Appendix
