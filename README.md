@@ -6,14 +6,14 @@ Teaching materials for the London School of Hygiene and Tropical Medicine Parasi
 
 ### Timetable
 - Thursday 22nd April
-     - 11:00-13:00: Module 1 - Artemis
-     - 14.00-17.00: Module 2 - Short read mapping
+     - 11:00-13:00: Computer Practical 1: Viewing genome sequences 
+     - 14.00-17.00: Computer Practical 2: Analysis of sequence variants
 - Friday 23rd April
-     - 11:00-13:00: Module 3 - Comparative genomics
-     - 14.00-16:30: Module 4 - Long-read sequence assembly
+     - 11:00-13:00: Computer Practical 3: Comparative genomics
+     - 14.00-16:30: Computer Practical 4: Long-read sequence assembly
 - Thursday 29th April
-     - 11:00-13:00: Module 5 - Transcriptomic analysis (1)
-     - 14.00-16:30: Module 6 - Transcriptomic analysis (2)
+     - 11:00-13:00: Computer Practical 5: Transcriptome analysis
+     - 14.00-16:30: Computer Practical 6: Further transcriptome analysis
 
 ### Pre-course information
 This course aims to give you experience in using software to analyse genomic DNA to address biological questions. The software will include downloadable graphical user interface (GUI), web-based, and UNIX-based command line tools. Using the command line can and will be very new and foreign to many of you, and much like learning any new language, will take time and practice to master. To get you started, we **highly recommend** you attempt the *Introduction to Shell* tutorial available at DataCamp, which you can access using the link below. In doing so, you will have a significant advantage in the modules that require you to use the command line.  
@@ -25,11 +25,11 @@ Video lectures are available as introductions to the material for each pair of p
 
 ### Introductory video lectures
 
-- Modules 1 & 2: [Video lecture]() [Slides](Presentations_2021/LSHTM2021_Talk_Introduction.pdf)
+- Practicals 1 & 2: [Video lecture]() [Slides](Presentations_2021/LSHTM2021_Talk_Introduction.pdf)
 
-- Modules 3 & 4: [Video lecture](https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=afa63dd7-01b8-433c-b37e-ad03015d384b) [Slides]()
+- Practicals 3 & 4: [Video lecture](https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=afa63dd7-01b8-433c-b37e-ad03015d384b) [Slides]()
 
-- Modules 5 & 6: [Video lecture]() [Slides](Presentations_2021/LSHTM2021_Talk_RNAseq.pdf)
+- Practicals 5 & 6: [Video lecture]() [Slides](Presentations_2021/LSHTM2021_Talk_RNAseq.pdf)
 
 ### Course manual
 
@@ -41,21 +41,21 @@ Video lectures are available as introductions to the material for each pair of p
      - [Online manual](Module_2_Mapping_Short_Reads.md)
      - [Manual PDF version](Module_2_Mapping_Short_Reads.pdf)
 
-3. Module 3 - Comparative Genomics
+3. Computer Practical 3: Comparative genomics
      - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_Module3_ComparativeGenomics.pdf)
      - [Online manual](Module_3_Comparative_Genomics.md)
      - [Manual PDF version](Module_3_Comparative_Genomics.pdf)
 
-4. Module 4 - Genome Assembly
+4. Computer Practical 4: Long-read sequence assembly
      - [Introductory presentation](presentations/Presentation_PathogenGenomicsLSHTM_Module4_DeNovoAssembly.pdf)
      - [Online manual](Module_4_Genome_Assembly.md)
      - [Manual PDF version](Module_4_Genome_Assembly.pdf)
 
-5. Module 5 - RNAseq(1)
+5. Computer Practical 5: Transcriptome analysis
      - [Online manual](Module_5_RNAseq1.md)
      - [Manual PDF version](Module_5_RNAseq1.pdf)
 
-6. Module 6 - RNAseq(2)
+6. Computer Practical 6: Further transcriptome analysis
      - [Online manual](Module_6_RNAseq2.md)
      - [Manual PDF version](Module_6_RNAseq2.pdf)
 
