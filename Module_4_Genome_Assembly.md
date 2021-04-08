@@ -1,4 +1,4 @@
-# Module 4 - Genome Assembly
+# Computer Practical 4: Long-read sequence assembly
 
 **Instructors**: [Adam Reid](mailto:ar11@sanger.ac.uk) & [Stephen Doyle](mailto:sd21@sanger.ac.uk), Wellcome Sanger Institute
 
