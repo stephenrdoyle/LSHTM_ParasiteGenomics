@@ -1,4 +1,4 @@
-# Module 3 - Comparative Genomics
+# Computer Practical 3: Comparative genomics
 
 ## Table of contents
 1. [Introduction & Aims](#introduction)
