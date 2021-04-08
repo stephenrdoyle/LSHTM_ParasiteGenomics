@@ -25,14 +25,11 @@ Video lectures are available as introductions to the material for each pair of p
 
 ### Introductory video lectures
 
-- [Modules 1 & 2]()
-- [Practicals 1 & 2 Introductory presentation](Presentations_2021/LSHTM2021_Talk_Introduction.pdf)
+- Modules 1 & 2: [Video lecture]() [Slides](Presentations_2021/LSHTM2021_Talk_Introduction.pdf)
 
-- [Modules 3 & 4](https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=afa63dd7-01b8-433c-b37e-ad03015d384b) 
-- [Practicals 3 & 4 Introductory presentation]()
+- Modules 3 & 4: [Video lecture](https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=afa63dd7-01b8-433c-b37e-ad03015d384b) [Slides]()
 
-- [Modules 5 & 6]()
-- [Practicals 5 & 6 Introductory presentation](Presentations_2021/LSHTM2021_Talk_RNAseq.pdf)
+- Modules 5 & 6: [Video lecture]() [Slides](Presentations_2021/LSHTM2021_Talk_RNAseq.pdf)
 
 ### Course manual
 
