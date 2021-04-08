@@ -1,5 +1,4 @@
-# Module 5 - RNA-seq 1
-
+# Computer Practical 5: Transcriptome analysis
 
 ## Table of contents
 1. [Introduction & Aims](#introduction)
