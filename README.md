@@ -27,7 +27,7 @@ Video lectures are available as introductions to the material for each pair of p
 
 - Practicals 1 & 2: [Video lecture](), [Slides](Presentations_2021/LSHTM2021_Talk_Introduction.pdf)
 
-- Practicals 3 & 4: [Video lecture](https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=afa63dd7-01b8-433c-b37e-ad03015d384b), [Slides]()
+- Practicals 3 & 4: [Video lecture](https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=afa63dd7-01b8-433c-b37e-ad03015d384b), [Slides](Presentations_2021/LSHTM2021_Talk_ComparativeGenomics_Assembly.pptx)
 
 - Practicals 5 & 6: [Video lecture](), [Slides](Presentations_2021/LSHTM2021_Talk_RNAseq.pdf)
 
