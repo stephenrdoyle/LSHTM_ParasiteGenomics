@@ -35,7 +35,7 @@ Video lectures are available as introductions to the material for each pair of p
 
 - Comparative genomics of apicomplexans – with a focus on large gene families (Adam Reid): [Video lecture](), [Slides]()
 
-- Comparative genomics of helminths (Stephen Doyle); [Video lecture](), [Slides]()
+- Comparative genomics of helminths (Stephen Doyle); [Video lecture](), [Slides](Presentations_2021/LSHTM_Talk_ComparativeGenomicsHelminths.pptx)
 
 ### Course manual
 
