@@ -426,7 +426,7 @@ Now let’s do a bit of house keeping because many of the files we have created 
 ```shell
 # type (or copy and paste) the following into the terminal
 
-rm NV_temp.bcf mapping.sam mapping.bam L2_cat.fasta.amb L2_cat.fasta.ann L2_cat.fasta.bwt L2_cat.fasta.pac L2_cat.fasta.sa L2_cat.fasta.fai
+rm mapping.sam mapping.bam L2_cat.fasta.amb L2_cat.fasta.ann L2_cat.fasta.bwt L2_cat.fasta.pac L2_cat.fasta.sa L2_cat.fasta.fai
 ```
 OR you can use the more conventional file manager if you prefer.
 
