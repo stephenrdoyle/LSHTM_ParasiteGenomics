@@ -31,7 +31,7 @@ The aim of this module is to become familiar with the basic functions of Artemis
 
  A small start-up window will appear (see below). The directory Module_3_Artemis contains all files you will need for this module.
  Now follow the sequence of numbers to load up the Salmonella Typhi chromosome sequence.
- Ask a demonstrator for help if you have any problems.
+ Ask an instructor for help if you have any problems.
 
 ![](images/module1_image1.png)
 
@@ -39,7 +39,7 @@ The aim of this module is to become familiar with the basic functions of Artemis
 
 
 ***Loading an annotation file (entry) into Artemis***  
-Hopefully you will now have an Artemis window like this! If not, ask a demonstrator for assistance.
+Hopefully you will now have an Artemis window like this! If not, ask an instructor for assistance.
 
 ![](images/module1_image3.png)
 
