@@ -473,7 +473,7 @@ Have a look through the variant filter window that pops up. You can select or un
 
 Like the BAM views you can also remove or include SNPs etc based on for example mapping score, depth of coverage or sequencing quality in the PROPERTY section listed under the INFO tab.
 
-Useful cutoff values are e.g. DP of at least 10 and Qual of at least 30.
+Useful cutoff values are Qual of at least 30.
 
 ![vcf_filter2](images/module2_image37.png)
 
