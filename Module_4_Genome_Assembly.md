@@ -451,7 +451,7 @@ Lets now compare your new sequence back against the reference to see how you hav
 ```shell
 # Compare your new sequence with the reference using nucmer and show-coords
 
-nucmer -maxmatch SM_V7_chr4.fa path_sequence.fasta
+nucmer -maxmatch ../step_4/SM_V7_chr4.fa path_sequence.fasta
 
 show-coords -lTH -L10000 out.delta  > out.coords
 
