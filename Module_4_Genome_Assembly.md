@@ -144,7 +144,7 @@ The output of kraken-report is tab-delimited, with one line per taxon. The fie
 ***Questions***
 - FastQC / MultiQC output
 	- What are the similarities / differences between read 1 and read 2?
-	- Are the base quality and nucleotide frequency distributions relatively level, or 	are they uneven?
+	- Are the base quality and nucleotide frequency distributions relatively level, or are they uneven? If so, why might this be the case?
 
 - Kraken
 	- What proportion of the reads are “unclassified”, and therefore potentially *S. mansoni* reads?
