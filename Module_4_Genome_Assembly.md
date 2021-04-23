@@ -434,7 +434,7 @@ cd /home/manager/Module_4_Assembly/step_5
 Bandage load SM_V7_chr4.miniasm.gfa
 ```
 - Draw graph. Zoom in on the top left hand corner on the largest graph
-- Select a node, and while continuing to hold the “ctrl” key, select multiple nodes in a linear path
+- Select a node, and while continuing to hold the “shift+ctrl” key, select multiple nodes in a linear path
      - You can move the nodes around if you need to to make it clearer / easier to see the path by clicking on one and dragging it to the side
      - Be careful not to double back on yourself – it will not save if it is not linear. For example:
 
