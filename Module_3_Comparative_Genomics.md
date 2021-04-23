@@ -159,7 +159,7 @@ We are now going to edit the gene model for *P. knowlesi*.
 - Within the Artemis window, use ‘Graph’ menu and switch ‘on’ the ‘GC Content (%)’ window.
 - Use ‘Goto’ menu to select ‘Navigator’ window and within the Navigator window, select ‘Goto Feature With This Qualifier Value’ and type ‘Phat4’.
 - Go to the first ACT window (first small window that appears when starting up ACT), and use the ‘Options’ menu to select ‘Enable Direct Editing’
-- Go through the gene model of ‘Phat4’ and have a glance through the exon-intron boundaries. Can you suggest any alternative gene model, after consulting the Table provided in Appendix XI, containing several examples of experimentally verified splice site sequences for *P. falciparum*?
+- Go through the gene model of ‘Phat4’ and have a glance through the exon-intron boundaries. Can you suggest any alternative gene model, after consulting the Table provided in Appendix VIIII, containing several examples of experimentally verified splice site sequences for *P. falciparum*?
 - Example modifications:
      - Have a look at the ‘misc_feature’, coloured in red (location: 15618..20618). Can you spot any difference in the red gene model of ‘Phat4’ at the exon-intron boundaries?
 - Select the red feature, click on ‘Edit’ menu and select ‘Selected Features in Editor’ and in the new window that pops out, change the ‘Key’ from misc_feature to ‘CDS’ and click on ‘OK’ button to close the window. Now you can compare the automatically created blue gene model and the curated red gene models at protein level and predict any alternative splicing pattern.
