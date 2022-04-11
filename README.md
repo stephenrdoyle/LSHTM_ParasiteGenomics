@@ -38,7 +38,7 @@ You will need to sign up for an account, however, this tutorial is free. There a
      - [Manual PDF version](Module_2_Mapping_Short_Reads.pdf)
 
 3. Computer Practical 3: Comparative genomics
-     - [Introductory presentation]()
+     - [Introductory presentation](Presentations_2022/LSHTM2022_Talk_ComparativeGenomics.pdf)
      - [Online manual](Module_3_Comparative_Genomics.md)
      - [Manual PDF version](Module_3_Comparative_Genomics.pdf)
 
