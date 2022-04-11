@@ -28,27 +28,27 @@ You will need to sign up for an account, however, this tutorial is free. There a
 ### Course manual
 
 1. Computer Practical 1: Viewing genome sequences
-     - [Introductory presentation](Presentations_2022/LSHTM2022_Talk_Introduction.pdf)
-     - [Online manual](Module_1_Artemis.md)
-     - [Manual PDF version](Module_1_Artemis.pdf)
+     - [Introductory presentation](Presentations_2022/LSHTM2022_Talk_Introduction.pdf). 
+     - [Online manual](Module_1_Artemis.md). 
+     - [Manual PDF version](Module_1_Artemis.pdf). 
      
 2. Computer Practical 2: Analysis of sequence variants
-     - [Introductory presentation](Presentations_2022/LSHTM2022_Talk_ShortReadMapping.pdf)
+     - [Introductory presentation](Presentations_2022/LSHTM2022_Talk_ShortReadMapping.pdf). 
      - [Online manual](Module_2_Mapping_Short_Reads.md)
      - [Manual PDF version](Module_2_Mapping_Short_Reads.pdf)
 
 3. Computer Practical 3: Comparative genomics
-     - [Introductory presentation](Presentations_2022/LSHTM2022_Talk_ComparativeGenomics.pdf)
-     - [Online manual](Module_3_Comparative_Genomics.md)
-     - [Manual PDF version](Module_3_Comparative_Genomics.pdf)
+     - [Introductory presentation](Presentations_2022/LSHTM2022_Talk_ComparativeGenomics.pdf). 
+     - [Online manual](Module_3_Comparative_Genomics.md). 
+     - [Manual PDF version](Module_3_Comparative_Genomics.pdf). 
 
 4. Computer Practical 4: Transcriptome analysis
-     - [Introductory presentation](Presentations_2022/LSHTM2022_Talk_RNAseq.pdf)
-     - [Online manual](Module_5_RNAseq1.md)
-     - [Manual PDF version](Module_5_RNAseq1.pdf)
+     - [Introductory presentation](Presentations_2022/LSHTM2022_Talk_RNAseq.pdf). 
+     - [Online manual](Module_5_RNAseq1.md). 
+     - [Manual PDF version](Module_5_RNAseq1.pdf)  
 
 5. Appendix
-     - [Manual](presentations/LSHTM_Appendix.pdf)
+     - [Manual](presentations/LSHTM_Appendix.pdf). 
 
 
 ### Instructor lectures - from 2021
