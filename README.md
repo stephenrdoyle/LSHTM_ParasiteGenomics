@@ -1,19 +1,19 @@
-# LSHTM_ParasiteGenomics_2021
+# LSHTM_ParasiteGenomics_2022
 
 Teaching materials for the London School of Hygiene and Tropical Medicine Parasite Genomics modules for 2021.
 
 **Instructors**: [Adam Reid](mailto:ar11@sanger.ac.uk) & [Stephen Doyle](mailto:sd21@sanger.ac.uk), Wellcome Sanger Institute
 
 ### Timetable
-- Thursday 22nd April
-     - 11:00-13:00: Computer Practical 1: Viewing genome sequences 
-     - 14.00-17.00: Computer Practical 2: Analysis of sequence variants
+- Thursday 28th April
+     - 9:30-12:45: Computer Practical 1: Viewing genome sequences (Artemis)
+     - 14.00-17.00: Computer Practical 2: Sequence variants (Mapping short reads)
 - Friday 23rd April
-     - 11:00-13:00: Computer Practical 3: Comparative genomics
-     - 14.00-16:30: Computer Practical 4: Long-read sequence assembly
-- Thursday 29th April
-     - 11:00-13:00: Computer Practical 5: Transcriptome analysis
-     - 14.00-16:30: Computer Practical 6: Further transcriptome analysis
+     - 9:30-12:45: Computer Practical 3: Comparative genomics
+     - 14.00-16:45: Computer Practical 4: Transcriptome analysis (RNA-seq 1)
+     - 16:45-17:15: First week Q&A discussion with module organisers
+
+
 
 ### Pre-course information
 This course aims to give you experience in using software to analyse genomic DNA to address biological questions. The software will include downloadable graphical user interface (GUI), web-based, and UNIX-based command line tools. Using the command line can and will be very new and foreign to many of you, and much like learning any new language, will take time and practice to master. To get you started, we **highly recommend** you attempt the *Introduction to Shell* tutorial available at DataCamp, which you can access using the link below. In doing so, you will have a significant advantage in the modules that require you to use the command line.  
@@ -51,17 +51,9 @@ Video lectures are available as introductions to the material for each pair of p
      - [Online manual](Module_3_Comparative_Genomics.md)
      - [Manual PDF version](Module_3_Comparative_Genomics.pdf)
 
-4. Computer Practical 4: Long-read sequence assembly
-     - [Online manual](Module_4_Genome_Assembly.md)
-     - [Manual PDF version](Module_4_Genome_Assembly.pdf)
-
-5. Computer Practical 5: Transcriptome analysis
+4. Computer Practical 4: Transcriptome analysis
      - [Online manual](Module_5_RNAseq1.md)
      - [Manual PDF version](Module_5_RNAseq1.pdf)
 
-6. Computer Practical 6: Further transcriptome analysis
-     - [Online manual](Module_6_RNAseq2.md)
-     - [Manual PDF version](Module_6_RNAseq2.pdf)
-
-7. Appendix
+5. Appendix
      - [Manual](presentations/LSHTM_Appendix.pdf)
