@@ -2,7 +2,9 @@
 
 Teaching materials for the London School of Hygiene and Tropical Medicine Parasite Genomics modules for 2021.
 
-**Instructors**: [Adam Reid](mailto:ar11@sanger.ac.uk) & [Stephen Doyle](mailto:sd21@sanger.ac.uk), Wellcome Sanger Institute
+**Instructors**: 
+- [Adam Reid](mailto:ajr236@cam.ac.uk), Gurdon Institute, University of Cambridge
+- [Stephen Doyle](mailto:sd21@sanger.ac.uk), Parasites & Microbes Programme, Wellcome Sanger Institute
 
 ### Timetable
 - Thursday 28th April
