@@ -57,4 +57,4 @@ You will need to sign up for an account, however, this tutorial is free. There a
 
 - Comparative genomics of helminths (Stephen Doyle); 
           - [Video lecture](https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=f3512871-d511-4a04-bf84-ad0c00a13cac)
-          - [Slides](Presentations_2021/LSHTM_Talk_ComparativeGenomicsHelminths.pptx)
+          - [Slides](Presentations_2022/LSHTM_Lecture_ComparativeGenomicsHelminths.pdf)
