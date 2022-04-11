@@ -25,17 +25,23 @@ Video lectures are available as introductions to the material for each pair of p
 
 ### Introductory video lectures
 
-- Practicals 1 & 2: [Video lecture](), [Slides](Presentations_2021/LSHTM2021_Talk_Introduction.pdf)
+- Practicals 1 & 2: 
+          - [Video lecture]()
+          - [Slides](Presentations_2021/LSHTM2021_Talk_Introduction.pdf)
 
-- Practicals 3 & 4: [Video lecture](https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=afa63dd7-01b8-433c-b37e-ad03015d384b), [Slides](Presentations_2021/LSHTM2021_Talk_ComparativeGenomics_Assembly.pdf)
-
-- Practicals 5 & 6: [Video lecture](), [Slides](Presentations_2021/LSHTM2021_Talk_RNAseq.pdf)
+- Practicals 3 & 4: 
+          - [Video lecture](https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=afa63dd7-01b8-433c-b37e-ad03015d384b)
+          - [Slides](Presentations_2021/LSHTM2021_Talk_ComparativeGenomics_Assembly.pdf)
+          - [Video lecture]()
+          - [Slides](Presentations_2021/LSHTM2021_Talk_RNAseq.pdf)
 
 ### Instructor lectures
 
 - Comparative genomics of apicomplexans – with a focus on large gene families (Adam Reid): [Video lecture](), [Slides](Presentations_2021/LSHTM2021_Talk_ComparativeProtozoa.pptx)
 
-- Comparative genomics of helminths (Stephen Doyle); [Video lecture](https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=f3512871-d511-4a04-bf84-ad0c00a13cac), [Slides](Presentations_2021/LSHTM_Talk_ComparativeGenomicsHelminths.pptx)
+- Comparative genomics of helminths (Stephen Doyle); 
+          - [Video lecture](https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=f3512871-d511-4a04-bf84-ad0c00a13cac)
+          - [Slides](Presentations_2021/LSHTM_Talk_ComparativeGenomicsHelminths.pptx)
 
 ### Course manual
 
