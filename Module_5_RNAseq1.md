@@ -1,4 +1,4 @@
-# Computer Practical 5: Transcriptome analysis
+# Computer Practical 4: Transcriptome analysis
 
 ## Table of contents
 1. [Introduction & Aims](#introduction)
