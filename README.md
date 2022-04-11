@@ -33,7 +33,7 @@ You will need to sign up for an account, however, this tutorial is free. There a
      - [Manual PDF version](Module_1_Artemis.pdf)
      
 2. Computer Practical 2: Analysis of sequence variants
-     - [Introductory presentation]()
+     - [Introductory presentation](Presentations_2022/LSHTM2022_Talk_ShortReadMapping.pdf)
      - [Online manual](Module_2_Mapping_Short_Reads.md)
      - [Manual PDF version](Module_2_Mapping_Short_Reads.pdf)
 
@@ -43,7 +43,7 @@ You will need to sign up for an account, however, this tutorial is free. There a
      - [Manual PDF version](Module_3_Comparative_Genomics.pdf)
 
 4. Computer Practical 4: Transcriptome analysis
-     - [Introductory presentation]()
+     - [Introductory presentation](Presentations_2022/LSHTM2022_Talk_RNAseq.pdf)
      - [Online manual](Module_5_RNAseq1.md)
      - [Manual PDF version](Module_5_RNAseq1.pdf)
 
