@@ -23,45 +23,38 @@ You will need to sign up for an account, however, this tutorial is free. There a
 
 [DataCamp - Introduction to Shell](https://www.datacamp.com/courses/introduction-to-shell)
 
-Video lectures are available as introductions to the material for each pair of practicals 1-6
 
-### Introductory video lectures
 
-- Practicals 1 & 2: 
-          - [Video lecture]()
-          - [Slides](Presentations_2021/LSHTM2021_Talk_Introduction.pdf)
+### Course manual
 
-- Practicals 3 & 4: 
-          - [Video lecture](https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=afa63dd7-01b8-433c-b37e-ad03015d384b)
-          - [Slides](Presentations_2021/LSHTM2021_Talk_ComparativeGenomics_Assembly.pdf)
-          - [Video lecture]()
-          - [Slides](Presentations_2021/LSHTM2021_Talk_RNAseq.pdf)
+1. Computer Practical 1: Viewing genome sequences
+     - [Introductory presentation]()
+     - [Online manual](Module_1_Artemis.md)
+     - [Manual PDF version](Module_1_Artemis.pdf)
+     
+2. Computer Practical 2: Analysis of sequence variants
+     - [Introductory presentation]()
+     - [Online manual](Module_2_Mapping_Short_Reads.md)
+     - [Manual PDF version](Module_2_Mapping_Short_Reads.pdf)
 
-### Instructor lectures
+3. Computer Practical 3: Comparative genomics
+     - [Introductory presentation]()
+     - [Online manual](Module_3_Comparative_Genomics.md)
+     - [Manual PDF version](Module_3_Comparative_Genomics.pdf)
+
+4. Computer Practical 4: Transcriptome analysis
+     - [Introductory presentation]()
+     - [Online manual](Module_5_RNAseq1.md)
+     - [Manual PDF version](Module_5_RNAseq1.pdf)
+
+5. Appendix
+     - [Manual](presentations/LSHTM_Appendix.pdf)
+
+
+### Instructor lectures - from 2021
 
 - Comparative genomics of apicomplexans – with a focus on large gene families (Adam Reid): [Video lecture](), [Slides](Presentations_2021/LSHTM2021_Talk_ComparativeProtozoa.pptx)
 
 - Comparative genomics of helminths (Stephen Doyle); 
           - [Video lecture](https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=f3512871-d511-4a04-bf84-ad0c00a13cac)
           - [Slides](Presentations_2021/LSHTM_Talk_ComparativeGenomicsHelminths.pptx)
-
-### Course manual
-
-1. Computer Practical 1: Viewing genome sequences
-     - [Online manual](Module_1_Artemis.md)
-     - [Manual PDF version](Module_1_Artemis.pdf)
-     
-2. Computer Practical 2: Analysis of sequence variants
-     - [Online manual](Module_2_Mapping_Short_Reads.md)
-     - [Manual PDF version](Module_2_Mapping_Short_Reads.pdf)
-
-3. Computer Practical 3: Comparative genomics
-     - [Online manual](Module_3_Comparative_Genomics.md)
-     - [Manual PDF version](Module_3_Comparative_Genomics.pdf)
-
-4. Computer Practical 4: Transcriptome analysis
-     - [Online manual](Module_5_RNAseq1.md)
-     - [Manual PDF version](Module_5_RNAseq1.pdf)
-
-5. Appendix
-     - [Manual](presentations/LSHTM_Appendix.pdf)
