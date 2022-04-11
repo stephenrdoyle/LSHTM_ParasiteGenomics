@@ -28,7 +28,7 @@ You will need to sign up for an account, however, this tutorial is free. There a
 ### Course manual
 
 1. Computer Practical 1: Viewing genome sequences
-     - [Introductory presentation]()
+     - [Introductory presentation](Presentations_2022/LSHTM2022_Talk_Introduction.pdf)
      - [Online manual](Module_1_Artemis.md)
      - [Manual PDF version](Module_1_Artemis.pdf)
      
