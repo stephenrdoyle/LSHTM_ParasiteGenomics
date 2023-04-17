@@ -1,6 +1,6 @@
 # LSHTM_ParasiteGenomics_2023
 
-Teaching materials for the London School of Hygiene and Tropical Medicine Parasite Genomics modules for 2022.
+Teaching materials for the London School of Hygiene and Tropical Medicine Parasite Genomics modules for 2023.
 
 **Instructors**: 
 - [Adam Reid](mailto:ajr236@cam.ac.uk), Gurdon Institute, University of Cambridge
