@@ -1,4 +1,4 @@
-# LSHTM_ParasiteGenomics_2022
+# LSHTM_ParasiteGenomics_2023
 
 Teaching materials for the London School of Hygiene and Tropical Medicine Parasite Genomics modules for 2022.
 
@@ -7,10 +7,10 @@ Teaching materials for the London School of Hygiene and Tropical Medicine Parasi
 - [Stephen Doyle](mailto:sd21@sanger.ac.uk), Parasites & Microbes Programme, Wellcome Sanger Institute
 
 ### Timetable
-- Thursday 28th April
+- Thursday 27th April
      - 9:30-12:45: Computer Practical 1: Viewing genome sequences (Artemis)
      - 14.00-17.00: Computer Practical 2: Sequence variants (Mapping short reads)
-- Friday 23rd April
+- Friday 28rd April
      - 9:30-12:45: Computer Practical 3: Comparative genomics
      - 14.00-16:45: Computer Practical 4: Transcriptome analysis (RNA-seq 1)
      - 16:45-17:15: First week Q&A discussion with module organisers
